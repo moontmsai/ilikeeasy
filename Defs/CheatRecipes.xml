@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <RecipeDef>
@@ -46,7 +46,7 @@
       <MedicineIndustrial>20</MedicineIndustrial>
     </products>
   </RecipeDef>
-  
+
 
   <RecipeDef>
     <defName>Cheat_Fuel</defName>
@@ -130,7 +130,7 @@
       <Cloth>200</Cloth>
     </products>
   </RecipeDef>
-  
+
 
   <RecipeDef>
     <defName>Cheat_plasteel</defName>
@@ -147,7 +147,7 @@
       <Plasteel>200</Plasteel>
     </products>
   </RecipeDef>
-  
+
   <RecipeDef>
     <defName>Cheat_uranium</defName>
     <label>우라늄 제작 (x200)</label>
@@ -212,7 +212,7 @@
       <ComponentSpacer>20</ComponentSpacer>
     </products>
   </RecipeDef>
-  
+
   <RecipeDef>
     <defName>Cheat_stone</defName>
     <label>석회암 석제 제작 (x200)</label>
@@ -237,11 +237,11 @@
     <soundWorking>Recipe_Cremate</soundWorking>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <recipeUsers>
-    <li>MTCraftingSpot</li>
+      <li>MTCraftingSpot</li>
     </recipeUsers>
     <workAmount>1</workAmount>
     <products>
-    <Hay>100</Hay>
+      <Hay>100</Hay>
     </products>
-</RecipeDef>
+  </RecipeDef>
 </Defs>

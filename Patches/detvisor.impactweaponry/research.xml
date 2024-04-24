@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Impact Weaponry</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="DV_ImpactShot"]</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>
+                        Defs/ThingDef[@ParentName="BaseHumanMakeableGun"]/recipeMaker/researchPrerequisite</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>
+                        Defs/ThingDef[@ParentName="BaseHumanMakeableGun"]/recipeMaker/skillRequirements</xpath>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@ParentName="BaseHumanMakeableGun"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Neolithic</techLevel>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DV_Chainsword"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Neolithic</techLevel>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
