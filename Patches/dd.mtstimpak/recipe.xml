@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>MTstimpak</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <RecipeDef>
+                            <defName>MakeMTStimpak</defName>
+                            <label>스팀팩 제작 x20</label>
+                            <description>스팀팩 20개를 만든다</description>
+                            <jobString>스팀팩 제작.</jobString>
+                            <workSkill>Crafting</workSkill>
+                            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                            <effectWorking>CutStone</effectWorking>
+                            <soundWorking>Recipe_Drug</soundWorking>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <targetCountAdjustment>10</targetCountAdjustment>
+                            <allowMixingIngredients>true</allowMixingIngredients>
+                            <workAmount>20</workAmount>
+                            <products>
+                                <MTStimpak>20</MTStimpak>
+                            </products>
+                        </RecipeDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

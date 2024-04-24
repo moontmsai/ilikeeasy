@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Biotech</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <RecipeDef>
+                            <defName>Make_Mechlink_Cheat</defName>
+                            <label>메크링크 제작</label>
+                            <description>메크링크를 제작한다.</description>
+                            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                            <effectWorking>CutStone</effectWorking>
+                            <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Crafting</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>1</workAmount>
+                            <products>
+                                <Mechlink>1</Mechlink>
+                            </products>
+                        </RecipeDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

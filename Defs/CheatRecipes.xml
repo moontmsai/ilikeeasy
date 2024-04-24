@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Cheat_makeSilver</defName>
+    <label>은 제작 (x200)</label>
+    <description>Makes 200 silver from 1 steel.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <products>
+      <Silver>200</Silver>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Cheat_Food</defName>
+    <label>감자 제작 (x100)</label>
+    <description>Makes 100 potatoes.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <RawPotatoes>100</RawPotatoes>
+    </products>
+  </RecipeDef>
+
+
+  <RecipeDef>
+    <defName>Cheat_Medicine</defName>
+    <label>약품 제작 (x20)</label>
+    <description>Makes 20 medicine.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <MedicineIndustrial>20</MedicineIndustrial>
+    </products>
+  </RecipeDef>
+  
+
+  <RecipeDef>
+    <defName>Cheat_Fuel</defName>
+    <label>화학연료 제작 (x200)</label>
+    <description>Makes 200 chemfuel.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <Chemfuel>200</Chemfuel>
+    </products>
+  </RecipeDef>
+
+
+  <RecipeDef>
+    <defName>Cheat_Component</defName>
+    <label>부품 제작 (x20)</label>
+    <description>Makes 20 components.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <ComponentIndustrial>20</ComponentIndustrial>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Cheat_Steel</defName>
+    <label>강철 제작 (x200)</label>
+    <description>Makes 200 steel.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <Steel>200</Steel>
+    </products>
+  </RecipeDef>
+
+
+  <RecipeDef>
+    <defName>Cheat_Wood</defName>
+    <label>목재 제작 (x200)</label>
+    <description>Makes 200 wood.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <WoodLog>200</WoodLog>
+    </products>
+  </RecipeDef>
+
+
+  <RecipeDef>
+    <defName>Cheat_cloth</defName>
+    <label>천 제작 (x200)</label>
+    <description>Makes 200 cloth.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <Cloth>200</Cloth>
+    </products>
+  </RecipeDef>
+  
+
+  <RecipeDef>
+    <defName>Cheat_plasteel</defName>
+    <label>플라스틸 제작 (x200)</label>
+    <description>Makes 200 plasteel.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <Plasteel>200</Plasteel>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Cheat_uranium</defName>
+    <label>우라늄 제작 (x200)</label>
+    <description>Makes 200 uranium.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <Uranium>200</Uranium>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Cheat_Gold</defName>
+    <label>금 제작 (x200)</label>
+    <description>Makes 200 gold.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <Gold>200</Gold>
+    </products>
+  </RecipeDef>
+
+
+  <RecipeDef>
+    <defName>Cheat_Jade</defName>
+    <label>비취옥 제작 (x200)</label>
+    <description>Makes 200 jade.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <Jade>200</Jade>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Cheat_ComponentSpacer</defName>
+    <label>고급 부품 제작 (x20)</label>
+    <description>Makes 20 advanced components.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <ComponentSpacer>20</ComponentSpacer>
+    </products>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>Cheat_stone</defName>
+    <label>석회암 석제 제작 (x200)</label>
+    <description>Makes 200 limestone blocks.</description>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>1</workAmount>
+    <recipeUsers>
+      <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <BlocksLimestone>200</BlocksLimestone>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Cheat_hay</defName>
+    <label>건초 제작 (x100)</label>
+    <description>Make Hay (x100)</description>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <recipeUsers>
+    <li>MTCraftingSpot</li>
+    </recipeUsers>
+    <workAmount>1</workAmount>
+    <products>
+    <Hay>100</Hay>
+    </products>
+</RecipeDef>
+</Defs>

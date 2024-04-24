@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Pocket Dimensions (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="KB_PocketDimensionEmpty"]/costStuffCount</xpath>
+                    <value>
+                        <costStuffCount>1</costStuffCount>
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="KB_PocketDimensionEmpty"]/costList</xpath>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="KB_PocketDimensionEmpty"]/comps</xpath>
+                    <value>
+                        <comps>
+                            <li Class="CompProperties_Flickable"/>
+                            <li Class="CompProperties_Power">
+                              <compClass>CompPowerTrader</compClass>
+                              <basePowerConsumption>100</basePowerConsumption>
+                            </li>
+                            <li Class="CompProperties_Refuelable">
+                              <fuelConsumptionRate>0.0</fuelConsumptionRate>
+                              <fuelCapacity>1.0</fuelCapacity>
+                              <fuelLabel>Advanced components</fuelLabel>
+                              <fuelFilter>
+                                <thingDefs>
+                                  <li>Steel</li>
+                                </thingDefs>
+                              </fuelFilter>
+                              <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+                              <autoRefuelPercent>1.0</autoRefuelPercent>
+                              <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                              <!--<initialFuelPercent>1.0</initialFuelPercent>-->
+                              <initialAllowAutoRefuel>false</initialAllowAutoRefuel>
+                            </li>
+                          </comps>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="KB_PocketDimensionBox"]/costStuffCount</xpath>
+                    <value>
+                        <costStuffCount>1</costStuffCount>
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="KB_PocketDimensionBox"]/costList</xpath>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="KB_PocketDimensionBox"]/comps</xpath>
+                    <value>
+                        <comps>
+                            <!--<li Class="CompProperties_Flickable"/>-->
+                            <li Class="CompProperties_Transporter">
+                                <max1PerGroup>true</max1PerGroup>
+                                <massCapacity>999999</massCapacity>
+                                <restEffectiveness>0.8</restEffectiveness>
+                            </li>
+                            <li Class="KB_PocketDimension.CompProperties_PocketDimensionBatteryShare">
+                                <compClass>KB_PocketDimension.CompPocketDimensionBatteryShare</compClass>
+                                <storedEnergyMax>100.0</storedEnergyMax>
+                            </li>
+                            <li Class="CompProperties_Battery">
+                                <storedEnergyMax>100.0</storedEnergyMax>
+                                <efficiency>1.00</efficiency>
+                                <transmitsPower>true</transmitsPower>
+                            </li>
+                            <li Class="KB_PocketDimension.CompProperties_PocketDimensionCreator">
+                                <exitDef>KB_PocketDimensionExit</exitDef>
+                                <componentDef>Steel</componentDef>
+                                <componentMultiplier>1</componentMultiplier>
+                                <componentLabel>Advanced components</componentLabel>
+                                <powerMultiplier>1</powerMultiplier>
+                            </li>
+                            <li Class="KB_PocketDimension.CompProperties_HasButton">
+                              <commandTexture>UI/Commands/Vent</commandTexture>
+                              <commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
+                              <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
+                            </li>
+                            <li Class="CompProperties_Glower">
+                              <glowRadius>3</glowRadius>
+                              <glowColor>(192,192,192,0)</glowColor>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

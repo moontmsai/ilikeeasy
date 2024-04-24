@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>SRTS Expanded (continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="SRTSE"]</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[
+                        defName="Research_SRTSSkip" or
+                        defName="Research_SRAF" or
+                        defName="Research_SRAFTek" or
+                        defName="Research_SRTSMkII" or
+                        defName="Research_SRTSMkIII" or
+                        defName="Research_SRTSMkIIIp" or
+                        defName="Research_SRTSMkIV"
+                    ]</xpath>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[
+                        defName="SRTSSuperpod" or
+                        defName="SRTSSkip" or
+                        defName="SRAF" or
+                        defName="SRAFTek" or
+                        defName="SRTSMkII" or
+                        defName="SRTSMkIII" or
+                        defName="SRTSMkIIIp" or
+                        defName="SRTSMkIV"
+                    ]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>Research_SRTS</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="Research_SRTSSuperpod"]</xpath>
+                    <value>
+                        <ResearchProjectDef>
+                            <defName>Research_SRTS</defName>
+                            <label>SRTS Research</label>
+                            <description>Slap a few Orbital Relay Launch Modules onto a traditional transport pod and Voilà! You've got a ship capable of return flight! It's just a first shaky step though.</description>
+                            <techLevel>Neolithic</techLevel>
+                            <researchViewX>2</researchViewX>
+                            <researchViewY>1</researchViewY>
+                          </ResearchProjectDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

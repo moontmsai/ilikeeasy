@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>VBY_ChemToNeutro</defName>
+    <label>뉴트로아민 처리 (x4)</label>
+    <description>화학연료에서 뉴트로아민 처리.</description>
+    <jobString>뉴트로아민 처리.</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workAmount>1500</workAmount>
+    <targetCountAdjustment>4</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Neutroamine>4</Neutroamine>
+    </products>
+    <skillRequirements>
+		<Intellectual>4</Intellectual>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+    <recipeUsers>
+		<li>DrugLab</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>VBY_ChemToNeutroBulk</defName>
+    <label>뉴트로아민 처리 (x10)</label>
+    <description>화학연료에서 뉴트로아민 처리 (x10).</description>
+    <jobString>뉴트로아민 처리 (x10).</jobString>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Brewing</soundWorking>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workAmount>2800</workAmount>
+    <targetCountAdjustment>10</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Neutroamine>10</Neutroamine>
+    </products>
+    <skillRequirements>
+		<Intellectual>6</Intellectual>
+    </skillRequirements>
+    <workSkill>Intellectual</workSkill>
+    <recipeUsers>
+		<li>DrugLab</li>
+    </recipeUsers>
+  </RecipeDef>
+
+	<RecipeDef>
+    <defName>FoxMake_ReinforcedBarrel</defName>
+    <label>강화 배럴 제작</label>
+    <description>Make a reinforced barrel</description>
+    <jobString>강화 배럴 제작</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>30000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+	<recipeUsers>
+	  <li>TableMachining</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ReinforcedBarrel>1</ReinforcedBarrel>
+    </products>
+	<researchPrerequisites>
+      <li>Mortars</li>
+    </researchPrerequisites>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Aerocraft Framework</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="MYDE_AerocraftFramework_ResearchTab"]</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ResearchProjectDef[
+                        defName="MYDE_AF_Research_PrimaryAerocraft" or
+                        defName="MYDE_AF_Research_IntermediateAerocraft" or
+                        defName="MYDE_AF_Research_AdvancedAerocraf" or
+                        defName="MYDE_AF_Research_ArchotechAerocraft"
+                    ]</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[
+                        defName="MYDE_AF_FWCraft_Bombardment" or
+                        defName="MYDE_AF_FWCraft_AerocraftCarrier" or
+                        defName="MYDE_AF_RotorCraft_FourPropeller_Base" or
+                        defName="MYDE_AF_RotorCraft_TwinPropeller_Base" or
+                        defName="MYDE_AF_RotorCraft_AssistiveCraft_Base" or
+                        defName="MYDE_AF_AddableWeapon_MiniGun" or
+                        defName="MYDE_AF_AddableWeapon_SniperGun" or
+                        defName="MYDE_AF_AddableWeapon_GrenadeGun"
+                    ]/researchPrerequisites</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="MYDE_AF_Apparel_SinglePropellerPack"]/recipeMaker/researchPrerequisite</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>A RimWorld of Magic</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="KB_PocketDimensionBox_Magic"]/researchPrerequisites</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

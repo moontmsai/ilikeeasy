@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>SRTS Expanded (continued)</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="NECShipBase"]/statBases/WorkToBuild</xpath>
+          <value>
+            <WorkToBuild>1</WorkToBuild>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="NECShipBase"]/comps/li/fuelPerTile</xpath>
+          <value>
+            <fuelPerTile>0.1</fuelPerTile>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@ParentName="NECShipBase"]/comps/li/initialFuelPercent</xpath>
+          <value>
+            <initialFuelPercent>1</initialFuelPercent>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[@ParentName="NECShipBase"]/costList</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[@ParentName="NECShipBase"]/constructionSkillPrerequisite</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

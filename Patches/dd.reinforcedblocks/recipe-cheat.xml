@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Reinforced Blocks</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!-- <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="BlocksReinforced"]</xpath>
+                    <value>
+                        <ThingDef ParentName="BlocksReinforcedBase">
+                            <generateCommonality>0</generateCommonality>
+                            <generateAllowChance>0</generateAllowChance>
+                            <defName>BlocksReinforced</defName>
+                            <label>강화 석재</label>
+                            <description>바위를 압축하여 강화한 석재. 매우 단단하고 아름다워 석상을 조각하거나 벽을 세우는데 용이하다.</description>
+                            <graphicData>
+                                <color>(79, 62, 62)</color>
+                            </graphicData>
+                            <statBases>
+                                <Mass>0.8</Mass>
+                                <Flammability>0</Flammability>
+                                <StuffPower_Armor_Sharp>2.0</StuffPower_Armor_Sharp>
+                                <StuffPower_Armor_Blunt>2.0</StuffPower_Armor_Blunt>
+                                <StuffPower_Armor_Heat>3.2</StuffPower_Armor_Heat>
+                                <StuffPower_Insulation_Cold>35</StuffPower_Insulation_Cold>
+                                <StuffPower_Insulation_Heat>35</StuffPower_Insulation_Heat>
+                                <SharpDamageMultiplier>1.8</SharpDamageMultiplier>
+                                <BluntDamageMultiplier>2.0</BluntDamageMultiplier>
+                            </statBases>
+                            <deepCommonality>0</deepCommonality>
+                            <thingCategories>
+                                <li>Textiles</li>
+                                <li>ResourcesRaw</li>
+                            </thingCategories>
+                            <stuffProps>
+                                <commonality>0</commonality>
+                                <appearance>Bricks</appearance>
+                                <categories>
+                                    <li>Fabric</li>
+                                    <li>Leathery</li>
+                                    <li>Woody</li>
+                                    <li>Metallic</li>
+                                </categories>
+                                <color>(79, 62, 62)</color>
+                                <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+                                <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+                                <stuffAdjective>강화 석재</stuffAdjective>
+                                <statOffsets>
+                                    <Beauty>3</Beauty>
+                                </statOffsets>
+                                <statFactors>
+                                    <MaxHitPoints>3</MaxHitPoints>
+                                    <Beauty>4</Beauty>
+                                    <Flammability>0</Flammability>
+                                    <WorkToMake>0.4</WorkToMake>
+                                    <WorkToBuild>0.4</WorkToBuild>
+                                    <MeleeWeapon_CooldownMultiplier>0.6</MeleeWeapon_CooldownMultiplier>
+                                    <DoorOpenSpeed>1.5</DoorOpenSpeed>
+                                    <BedRestEffectiveness>1.5</BedRestEffectiveness>
+                                </statFactors>
+                                <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+                            </stuffProps>
+                        </ThingDef>
+                    </value>
+                </li> -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <RecipeDef>
+                            <defName>MakeBlocksReinforcedCheats</defName>
+                            <label>강화 석재 x20 제작</label>
+                            <description>강화 석재를 제작한다. (x20)</description>
+                            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                            <effectWorking>CutStone</effectWorking>
+                            <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Crafting</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>11</workAmount>
+                            <products>
+                                <BlocksReinforced>20</BlocksReinforced>
+                            </products>
+                        </RecipeDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

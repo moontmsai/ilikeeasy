@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Pocket Dimensions (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="KB_Dimensional_Manipulation"]</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[@Name="KB_PocketDimension_ResearchBase"]</xpath>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName="KB_PocketDimension_Research_PocketDimension"]</xpath>
+                    <value>
+                        <ResearchProjectDef>
+                            <defName>KB_PocketDimension_Research_PocketDimension</defName>
+                            <label>pocket dimensions</label>
+                            <techLevel>Neolithic</techLevel>
+                            <researchViewX>2.00</researchViewX>
+                            <researchViewY>0.00</researchViewY>
+                        </ResearchProjectDef>
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="KB_PocketDimensionBox"]/researchPrerequisites</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>A RimWorld of Magic</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="KB_PocketDimensionBox_Magic"]/researchPrerequisites</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

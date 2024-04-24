@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Tiny Workbenchs (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="TWB_TinyWorkBenchs"]</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="TWB_NutrientPasteDispenser"]/researchPrerequisites</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[@Name="TWB_MiniBenchBase"]/researchPrerequisites</xpath>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="TWB_MiniBenchBase"]/statBases/WorkTableWorkSpeedFactor</xpath>
+                    <value>
+                        <WorkTableWorkSpeedFactor>1.00</WorkTableWorkSpeedFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="TWB_HandTailoringBenchMini"]/statBases/WorkTableWorkSpeedFactor</xpath>
+                    <value>
+                        <WorkTableWorkSpeedFactor>1.00</WorkTableWorkSpeedFactor>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="TWB_ElectricTailoringBenchMini"]/building/unpoweredWorkTableWorkSpeedFactor</xpath>
+                    <value>
+                        <unpoweredWorkTableWorkSpeedFactor>0.7</unpoweredWorkTableWorkSpeedFactor>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[@ParentName="TWB_MiniBenchBase"]/statBases/Cleanliness</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

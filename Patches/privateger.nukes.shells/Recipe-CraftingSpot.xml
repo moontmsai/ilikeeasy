@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[1.5] Nukes</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+						<RecipeDef>
+							<defName>MakeShell_LargeNuclearWarhead</defName>
+							<label>Shell_LargeNuclearWarhead 제작</label>
+							<description>Shell_LargeNuclearWarhead</description>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_Machining</soundWorking>
+							<targetCountAdjustment>20</targetCountAdjustment>
+							<workSkill>Crafting</workSkill>
+							<recipeUsers>
+								<li>MTCraftingSpot</li>
+							</recipeUsers>
+							<workAmount>1</workAmount>
+							<products>
+								<Shell_LargeNuclearWarhead>1</Shell_LargeNuclearWarhead>
+							</products>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>MakeShell_SmallNuclearWarhead</defName>
+							<label>small nuclear warhead 제작</label>
+							<description>small nuclear warhead</description>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_Machining</soundWorking>
+							<targetCountAdjustment>20</targetCountAdjustment>
+							<workSkill>Crafting</workSkill>
+							<recipeUsers>
+								<li>MTCraftingSpot</li>
+							</recipeUsers>
+							<workAmount>1</workAmount>
+							<products>
+								<Shell_SmallNuclearWarhead>1</Shell_SmallNuclearWarhead>
+							</products>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>MakeShell_FusionWarhead</defName>
+							<label>Shell_FusionWarhead 제작</label>
+							<description>Shell_FusionWarhead</description>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_Machining</soundWorking>
+							<targetCountAdjustment>20</targetCountAdjustment>
+							<workSkill>Crafting</workSkill>
+							<recipeUsers>
+								<li>MTCraftingSpot</li>
+							</recipeUsers>
+							<workAmount>1</workAmount>
+							<products>
+								<Shell_FusionWarhead>1</Shell_FusionWarhead>
+							</products>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>MakeShell_DirtyNuclearWarhead</defName>
+							<label>Shell_DirtyNuclearWarhead 제작</label>
+							<description>Shell_DirtyNuclearWarhead</description>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_Machining</soundWorking>
+							<targetCountAdjustment>20</targetCountAdjustment>
+							<workSkill>Crafting</workSkill>
+							<recipeUsers>
+								<li>MTCraftingSpot</li>
+							</recipeUsers>
+							<workAmount>1</workAmount>
+							<products>
+								<Shell_DirtyNuclearWarhead>1</Shell_DirtyNuclearWarhead>
+							</products>
+						</RecipeDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

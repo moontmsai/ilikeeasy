@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- <Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="Shell_LargeNuclearWarhead"]/costList</xpath>
+	</Operation> -->
+
+	<!-- <Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@ParentName="BodyPartProstheticMakeableBase" and costList/ComponentIndustrial]</xpath>
+		<value>
+			<smeltProducts>
+				<ComponentIndustrial>1</ComponentIndustrial>
+			</smeltProducts>
+			<smeltable>true</smeltable>
+		</value>
+	</Operation> -->
+
+	<!-- <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="BodyPartBionicBase"]/recipeMaker/recipeUsers</xpath>
+		<value>
+			<recipeUsers>
+				<li>TableBionics</li>
+			</recipeUsers>
+		</value>
+	</Operation> -->
+
+	<!-- <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>ReGrowth: Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/TerrainDef[
+                        defName="RG_TemperateSoil" or
+                        defName="RG_BorealSoil" or
+                        defName="RG_TundraSoil" or
+                        defName="RG_AridSoil" or
+                        defName="RG_TropicalSoil" or
+                        defName="RG_AspenSoil" or
+                        defName="RG_BoilingSoil"
+                    ]</xpath>
+                    <value>
+                        <li Class="DigMoat.Extension">
+                            <fill>SoilRich</fill>
+                            <dig>Mud</dig>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/TerrainDef[defName="RG_HotSpringSand"]</xpath>
+                    <value>
+                        <li Class="DigMoat.Extension">
+                            <dig>Gravel</dig>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation> -->
+
+	<!-- <Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Shell_LargeNuclearWarhead"]/costList</xpath>
+		<value>
+			<costList>
+				<Steel>1</Steel>
+			</costList>
+		</value>
+	</Operation> -->
+
+</Patch>

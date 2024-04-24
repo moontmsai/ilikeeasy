@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>RT Fuse</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Building_RTCircuitBreaker"]/comps/li[@Class="RT_Fuse.CompProperties_RTFuse"]/surgeMitigation</xpath>
+          <value>
+            <surgeMitigation>1000000</surgeMitigation>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Building_RTMakeshiftFuse"]/comps/li[@Class="RT_Fuse.CompProperties_RTFuse"]/surgeMitigation</xpath>
+          <value>
+            <surgeMitigation>1000000</surgeMitigation>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

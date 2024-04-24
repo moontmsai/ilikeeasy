@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[1.5] Nukes</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="NuclearWeaponsResearch"]</xpath>
+                </li>
+				<li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="SmallNuclearWeaponsResearch"]</xpath>
+                </li>
+				<li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="DirtyNuclearWeaponsResearch"]</xpath>
+                </li>
+				<li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="LargeNuclearWeaponsResearch"]</xpath>
+                </li>
+				<li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="FusionWeaponsResearch"]</xpath>
+                </li>
+
+				<li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[@ParentName="ShellBase"]/recipeMaker/researchPrerequisite</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[@ParentName="BuildingBase"]/researchPrerequisites</xpath>
+                </li>
+<!-- 연구관련 기본에러 발생함. 문제없음 -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

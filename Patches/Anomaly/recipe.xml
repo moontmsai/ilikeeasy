@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Anomaly</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <RecipeDef>
+                            <defName>MakeBioferriteCheats</defName>
+                            <label>생체강철 x20 제작</label>
+                            <description>생체강철을 제작한다. (x20)</description>
+                            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                            <effectWorking>CutStone</effectWorking>
+                            <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Crafting</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>1</workAmount>
+                            <products>
+                                <Bioferrite>20</Bioferrite>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef>
+                            <defName>MakeShardCheats</defName>
+                            <label>조각 제작</label>
+                            <description>조각을 제작한다.</description>
+                            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                            <effectWorking>CutStone</effectWorking>
+                            <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Crafting</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>1</workAmount>
+                            <products>
+                                <Shard>1</Shard>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef>
+                            <defName>MakeMeat_TwistedCheats</defName>
+                            <label>뒤틀린 고기 x20 제작</label>
+                            <description>뒤틀린 고기를 제작한다. (x20)</description>
+                            <workSpeedStat>CookSpeed</workSpeedStat>
+                            <effectWorking>Cook</effectWorking>
+                            <soundWorking>Recipe_CookMeal</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Cooking</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>1</workAmount>
+                            <products>
+                                <Meat_Twisted>20</Meat_Twisted>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef>
+                            <defName>MakeApparel_PackTurretCheats</defName>
+                            <label>포탑 팩 제작</label>
+                            <description>Make turret pack</description>
+                            <workSpeedStat>CookSpeed</workSpeedStat>
+                            <effectWorking>Cook</effectWorking>
+                            <soundWorking>Recipe_CookMeal</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Cooking</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>1</workAmount>
+                            <products>
+                                <Apparel_PackTurret>1</Apparel_PackTurret>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef>
+                            <defName>MakeApparel_DeadlifePackCheats</defName>
+                            <label>죽은 목숨 팩 제작</label>
+                            <description>Make deadlife pack</description>
+                            <workSpeedStat>CookSpeed</workSpeedStat>
+                            <effectWorking>Cook</effectWorking>
+                            <soundWorking>Recipe_CookMeal</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Cooking</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>1</workAmount>
+                            <products>
+                                <Apparel_DeadlifePack>1</Apparel_DeadlifePack>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef>
+                            <defName>MakeApparel_DisruptorFlarePackCheats</defName>
+                            <label>교란 신호탄 팩 제작</label>
+                            <description>Make disruptor flare pack</description>
+                            <workSpeedStat>CookSpeed</workSpeedStat>
+                            <effectWorking>Cook</effectWorking>
+                            <soundWorking>Recipe_CookMeal</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Cooking</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>1</workAmount>
+                            <products>
+                                <Apparel_DisruptorFlarePack>1</Apparel_DisruptorFlarePack>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef>
+                            <defName>MakeGun_HellcatRifleCheats</defName>
+                            <label>헬캣 소총 제작</label>
+                            <description>Make hellcat rifle</description>
+                            <workSpeedStat>CookSpeed</workSpeedStat>
+                            <effectWorking>Cook</effectWorking>
+                            <soundWorking>Recipe_CookMeal</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Cooking</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>1</workAmount>
+                            <products>
+                                <Gun_HellcatRifle>1</Gun_HellcatRifle>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef>
+                            <defName>MakeGun_IncineratorCheats</defName>
+                            <label>소각기 제작</label>
+                            <description>Make incinerator</description>
+                            <workSpeedStat>CookSpeed</workSpeedStat>
+                            <effectWorking>Cook</effectWorking>
+                            <soundWorking>Recipe_CookMeal</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Cooking</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>1</workAmount>
+                            <products>
+                                <Gun_Incinerator>1</Gun_Incinerator>
+                            </products>
+                        </RecipeDef>
+
+                        <RecipeDef>
+                            <defName>MakeApparel_BiomutationLanceCheats</defName>
+                            <label>생체변이 랜스 제작</label>
+                            <description>Make biomutation lance</description>
+                            <workSpeedStat>CookSpeed</workSpeedStat>
+                            <effectWorking>Cook</effectWorking>
+                            <soundWorking>Recipe_CookMeal</soundWorking>
+                            <targetCountAdjustment>20</targetCountAdjustment>
+                            <workSkill>Cooking</workSkill>
+                            <recipeUsers>
+                                <li>MTCraftingSpot</li>
+                            </recipeUsers>
+                            <workAmount>1</workAmount>
+                            <products>
+                                <Apparel_BiomutationLance>1</Apparel_BiomutationLance>
+                            </products>
+                        </RecipeDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

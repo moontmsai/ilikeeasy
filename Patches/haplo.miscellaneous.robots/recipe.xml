@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Misc. Robots</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <RecipeDef>
+              <defName>MakeMiscHauler</defName>
+              <label>운반로봇 제작</label>
+              <description>.</description>
+              <jobString>Make Robot Hauler</jobString>
+              <workSkill>Crafting</workSkill>	
+              <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+              <effectWorking>Smith</effectWorking>
+              <soundWorking>Recipe_Smith</soundWorking>
+                <recipeUsers>	  
+                  <li>MTCraftingSpot</li>
+                </recipeUsers>
+              <targetCountAdjustment>10</targetCountAdjustment>	
+              <allowMixingIngredients>true</allowMixingIngredients>
+              <workAmount>1</workAmount>
+              <products>
+                <AIRobot_RechargeStation_Hauler>1</AIRobot_RechargeStation_Hauler>
+              </products>
+            </RecipeDef>
+          
+            <RecipeDef>
+              <defName>MakeMiscCleaner</defName>
+              <label>청소로봇 제작</label>
+              <description>.</description>
+              <jobString>Make Robot Cleaner</jobString>
+              <workSkill>Crafting</workSkill>	
+              <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+              <effectWorking>Smith</effectWorking>
+              <soundWorking>Recipe_Smith</soundWorking>
+                <recipeUsers>	  
+                  <li>MTCraftingSpot</li>
+                </recipeUsers>
+              <targetCountAdjustment>10</targetCountAdjustment>	
+              <allowMixingIngredients>true</allowMixingIngredients>
+              <workAmount>1</workAmount>
+              <products>
+                <AIRobot_RechargeStation_Cleaner>1</AIRobot_RechargeStation_Cleaner>
+              </products>
+            </RecipeDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

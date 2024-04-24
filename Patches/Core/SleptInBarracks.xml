@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThoughtDef[defName="SleptInBarracks"]/stages</xpath>
+		<value>
+			<stages>
+				<li>
+					<label>끔찍한 막사</label>
+					<description>끔찍한 막사에서 잤어요. 그것뿐만 아니라, 다른 사람들과 함께 자야 했어요!</description>
+					<baseMoodEffect>-4</baseMoodEffect>
+				  </li>
+				  <li>
+					<label>지루한 막사</label>
+					<description>지루한 막사에서 잤어요. 그것뿐만 아니라, 다른 사람들과 함께 자야 했어요.</description>
+					<baseMoodEffect>-2</baseMoodEffect>
+				  </li>
+				  <li>
+					<label>보통 막사</label>
+					<description>다른 사람들이 있는 보통 막사에서 잤어요. 정말 싫어요.</description>
+					<baseMoodEffect>-1</baseMoodEffect>
+				  </li>
+				  <li>
+					<label>양호한 막사</label>
+					<description>양호한 막사에서 잤어요. 하지만 잠자는 공간을 공유하는 것은 정말 싫어요.</description>
+					<baseMoodEffect>1</baseMoodEffect>
+				  </li>
+				  <li>
+					<label>조금 인상적인 막사</label>
+					<description>꽤 괜찮은 막사에서 잤어요. 하지만 다른 사람들과 방을 공유하는 건 정말 싫어요.</description>
+					<baseMoodEffect>2</baseMoodEffect>
+				  </li>
+				  <li>
+					<label>인상적인 막사</label>
+					<description>인상적인 막사에서 잤어요. 하지만 공유해야 한다는 게 너무 싫어요.</description>
+					<baseMoodEffect>4</baseMoodEffect>
+				  </li>
+				  <li>
+					<label>매우 인상적인 막사</label>
+					<description>매우 인상적인 막사에서 잤어요. 공유해도 괜찮아요.</description>
+					<baseMoodEffect>6</baseMoodEffect>
+				  </li>
+				  <li>
+					<label>매우 인상적인 막사</label>
+					<description>매우 인상적인 막사에서 잤어요. 공유해도 괜찮아요.</description>
+					<baseMoodEffect>8</baseMoodEffect>
+				  </li>
+				  <li>
+					<label>믿을 수 없을 정도로 인상적인 막사</label>
+					<description>내가 잔 막사는 너무 인상적이었어요. 공유해도 괜찮아요.</description>
+					<baseMoodEffect>10</baseMoodEffect>
+				  </li>
+				  <li>
+					<label>경이로운 인상적인 막사</label>
+					<description>정말 경이로운 막사에서 잤어요. 이런 공간을 공유해도 기분이 좋아요.</description>
+					<baseMoodEffect>12</baseMoodEffect>
+				  </li>
+				  
+			</stages>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThoughtDef[defName = "PrisonBarracks"]/stages</xpath>
+		<value>
+			<stages>
+				<li>
+					<label>끔찍한 감옥 막사</label>
+					<description>나의 감옥 막사는 정말 끔찍한 곳이야.</description>
+					<baseMoodEffect>-4</baseMoodEffect>
+				</li>
+				<li>
+					<label>지루한 감옥 막사</label>
+					<description>나는 지루한 감옥 막사에 살고 있다.</description>
+					<baseMoodEffect>-1</baseMoodEffect>
+				</li>
+					<li IsNull="True" /> <!-- 평범한 -->
+					<li IsNull="True" /> <!-- 양호한 -->
+				<li>
+					<label>약간 인상적인 감옥 막사</label>
+					<description>나의 감옥 막사는 약간 인상적이다.</description>
+					<baseMoodEffect>2</baseMoodEffect>
+				</li>
+				<li>
+					<label>다소 인상적인 감옥 막사</label>
+					<description>나의 감옥 막사는 인상적이다. 나는 이것을 좋아한다.</description>
+					<baseMoodEffect>3</baseMoodEffect>
+				</li>
+				<li>
+					<label>매우 인상적인 감옥 막사</label>
+					<description>나의 감옥 막사는 매우 인상적이다. 나는 이것을 좋아한다.</description>
+					<baseMoodEffect>4</baseMoodEffect>
+				</li>
+				<li>
+					<label>극도로 인상적인 감옥 막사</label>
+					<description>나의 감옥 막사는 극도로 인상적이다. 이런 곳에 나를 갇아두고 있는다니 믿을 수 없어.</description>
+					<baseMoodEffect>5</baseMoodEffect>
+				</li>
+				<li>
+					<label>믿을 수 없을 만큼 인상적인 감옥 막사</label>
+					<description>나의 감옥 막사는 믿을 수 없을 만큼 인상적이다. 이런 곳에 나를 갇아두고 있는다니 믿을 수 없어.</description>
+					<baseMoodEffect>6</baseMoodEffect>
+				</li>
+				<li>
+					<label>경이로운 감옥 막사</label>
+					<description>나의 감옥 막사는 멋지다! 이런 곳에 나를 갇아두고 있는다니 믿을 수 없어.</description>
+					<baseMoodEffect>7</baseMoodEffect>
+				</li>				  
+			</stages>
+		</value>
+	</Operation>
+</Patch>

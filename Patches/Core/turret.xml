@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+   <Operation Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>Defs/ThingDef[verbs/li/consumeFuelPerShot]/verbs/li/consumeFuelPerShot</xpath>
+      <value>
+        <consumeFuelPerShot>0</consumeFuelPerShot>
+      </value>
+   </Operation>
+   <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>Defs/ThingDef[verbs/li/consumeFuelPerBurst]/verbs/li/consumeFuelPerBurst</xpath>
+    <value>
+      <consumeFuelPerBurst>0</consumeFuelPerBurst>
+    </value>
+ </Operation>
+</Patch>
