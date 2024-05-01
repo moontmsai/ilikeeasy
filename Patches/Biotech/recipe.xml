@@ -27,6 +27,23 @@
                                 <Mechlink>1</Mechlink>
                             </products>
                         </RecipeDef>
+						<RecipeDef>
+							<defName>Make_ArchiteCapsule_Cheat</defName>
+							<label>초월입자 캡슐 제작</label>
+							<description>초월입자 캡슐을 제작한다.</description>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>CutStone</effectWorking>
+							<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+							<targetCountAdjustment>20</targetCountAdjustment>
+							<workSkill>Crafting</workSkill>
+							<recipeUsers>
+								<li>MTCraftingSpot</li>
+							</recipeUsers>
+							<workAmount>1</workAmount>
+							<products>
+								<ArchiteCapsule>1</ArchiteCapsule>
+							</products>
+						</RecipeDef>
                     </value>
                 </li>
             </operations>
