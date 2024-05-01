@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RT Power Switch</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>
+                        Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/baseCost</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>
+                        Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/prerequisites</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/tab</xpath>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/researchViewX</xpath>
+                    <value>
+                        <researchViewX>2.00</researchViewX>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/ResearchProjectDef[defName="ResearchProject_RTEmergencyPower"]/researchViewY</xpath>
+                    <value>
+                        <researchViewY>0.60</researchViewY>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <Operation Class="PatchOperationFindMod">
         <mods>
@@ -18,7 +18,7 @@
                         defName="Research_SRTSMkIII" or
                         defName="Research_SRTSMkIIIp" or
                         defName="Research_SRTSMkIV"
-                    ]</xpath>
+                        ]</xpath>
                 </li>
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/ThingDef[
@@ -30,7 +30,7 @@
                         defName="SRTSMkIII" or
                         defName="SRTSMkIIIp" or
                         defName="SRTSMkIV"
-                    ]/researchPrerequisites</xpath>
+                        ]/researchPrerequisites</xpath>
                     <value>
                         <researchPrerequisites>
                             <li>Research_SRTS</li>
@@ -43,11 +43,13 @@
                         <ResearchProjectDef>
                             <defName>Research_SRTS</defName>
                             <label>SRTS Research</label>
-                            <description>Slap a few Orbital Relay Launch Modules onto a traditional transport pod and Voilà! You've got a ship capable of return flight! It's just a first shaky step though.</description>
+                            <description>Slap a few Orbital Relay Launch Modules onto a traditional
+                                transport pod and Voilà! You've got a ship capable of return flight!
+                                It's just a first shaky step though.</description>
                             <techLevel>Neolithic</techLevel>
-                            <researchViewX>2</researchViewX>
-                            <researchViewY>1</researchViewY>
-                          </ResearchProjectDef>
+                            <researchViewX>2.00</researchViewX>
+                            <researchViewY>1.20</researchViewY>
+                        </ResearchProjectDef>
                     </value>
                 </li>
             </operations>

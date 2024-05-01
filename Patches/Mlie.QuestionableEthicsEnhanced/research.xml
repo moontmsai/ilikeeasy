@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Questionable Ethics Enhanced (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="QE_ResearchTab"]</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[
+						defName="QE_Distillation" or
+						defName="QE_OrganVat" or 
+						defName="QE_GenomeSequencing" or
+						defName="QE_VatGrownBeings" or 
+						defName="QE_AdvancedRefining" or 
+						defName="QE_Neutroamine" or 
+						defName="QE_Edibles" or
+						defName="QE_OrganVat_InternalOrgans" or
+						defName="QE_OrganVat_SensoryOrgans" or
+						defName="QE_OrganVat_Bones" or
+						defName="QE_OrganVat_Limbs" or
+						defName="QE_BrainScanning" or
+						defName="QE_NerveStapling"
+					]</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/RecipeDef[
+						defName="QE_InstallNerveStaple" or
+						defName="QE_Make_NerveStaples" or
+						defName="QE_BrainScanning" or
+						defName="QE_Make_BrainScanner" or
+						defName="QE_GenomeSequencing" or
+						defName="QE_Make_GenomeSequencer" or
+						defName="Make_NutrientSolutionFromOrganics" or
+						defName="Make_ProteinMashFromOrganics" or
+						defName="Make_ProteinMashFromNutrientSolution" or
+						defName="Make_QESynthMeat" or
+						defName="Make_QENutrientPaste" or
+						defName="Make_QENeutroamine" or
+						defName="QE_Natural_Arm" or
+						defName="QE_Natural_Ear" or
+						defName="QE_Natural_Eye" or
+						defName="QE_Natural_Foot" or
+						defName="QE_Natural_Hand" or
+						defName="QE_Natural_Heart" or
+						defName="QE_Natural_Jaw" or
+						defName="QE_Natural_Kidney" or
+						defName="QE_Natural_Leg" or
+						defName="QE_Natural_Liver" or
+						defName="QE_Natural_Lung" or
+						defName="QE_Natural_Nose" or
+						defName="QE_Natural_Tongue" or
+						defName="QE_Natural_Pelvis" or
+						defName="QE_Natural_Spine" or
+						defName="QE_Natural_Stomach"
+						]/researchPrerequisite
+					</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[
+						defName="QE_Building_OrganVat" or
+						defName="QE_OrganVat" or
+						defName="QE_PawnVat"
+						]/researchPrerequisites
+					</xpath>
+                </li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="QEImplantBase"]/techLevel</xpath>
+					<value>
+						<techLevel>Industrial</techLevel>
+					</value>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

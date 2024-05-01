@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RT Power Switch</li>
+        </mods>
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>RT Fuse</li>
+                <li>RT Solar Flare Shield</li>
+            </mods>
+            <nomatch Class="PatchOperationRemove">
+                <xpath>Defs/ResearchTabDef[defName="RTMods"]</xpath>
+            </nomatch>
+        </match>
+    </Operation>
+</Patch>

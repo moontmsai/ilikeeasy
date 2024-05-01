@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Harvest Organs Post Mortem</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchTabDef[defName="Autopsy"]</xpath>
+                </li>
+
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="BasicAutopsy" or
+                        defName="AdvancedAutopsy" or defName="GlitterworldAutopsy" or
+                        defName="AnimalAutopsy"]</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="TableAutopsy"]/researchPrerequisites</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/RecipeDef[defName="AutopsyBasic" or
+                        defName="AutopsyAdvanced" or defName="AutopsyGlitterworld" or
+                        defName="AutopsyAnimal"]/researchPrerequisite</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
