@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Cryogenic Generator I</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>
+						Defs/ResearchTabDef[defName="CryogenicPower"]
+					</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ResearchProjectDef[defName="CryoPowerI"]</xpath>
+                </li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorI"]/statBases/WorkToBuild</xpath>
+					<value>
+						<WorkToBuild>1</WorkToBuild>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorI"]/costList
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorI"]/researchPrerequisites
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorI"]/constructionSkillPrerequisite
+					</xpath>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Cryogenic Generator II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="CryoPowerII"]</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorII"]/statBases/WorkToBuild
+					</xpath>
+					<value>
+						<WorkToBuild>1</WorkToBuild>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorII"]/costList
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorII"]/researchPrerequisites
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorII"]/constructionSkillPrerequisite
+					</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Cryogenic Generator II</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="CryoPowerIII"]</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorIII"]/statBases/WorkToBuild
+					</xpath>
+					<value>
+						<WorkToBuild>1</WorkToBuild>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorIII"]/costList
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorIII"]/researchPrerequisites
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorIII"]/constructionSkillPrerequisite
+					</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
