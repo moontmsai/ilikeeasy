@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Drakken Laser Drill</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>
+						Defs/ResearchProjectDef[
+						defName="MYDE_DrakkenLaserDrill_Research_Base" or
+						defName="MYDE_DrakkenLaserDrill_Research_ConcentratedBeam" or
+						defName="MYDE_DrakkenLaserDrill_Research_PulseCannon"
+						]/baseCost
+					</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="MYDE_Building_DrakkenLaserDrill"]/costList</xpath>
+                </li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[
+						defName="MYDE_Building_DrakkenLaserDrill" or
+						defName="MYDE_Building_DrakkenLaserDrill_UpdateEnergy" or
+						defName="MYDE_Building_DrakkenLaserDrill_UpdateDamage" or
+						defName="MYDE_Building_DrakkenLaserDrill_UpdateAP"
+						]/statBases/WorkToBuild</xpath>
+					<value>
+						<WorkToBuild>1</WorkToBuild>
+					</value>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
