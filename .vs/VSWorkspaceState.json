@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Defs",
     "\\Patches",
-    "\\Patches\\Anomaly",
-    "\\Patches\\Biotech",
-    "\\Patches\\MYDE.DrakkenLaserDrill"
+    "\\Patches\\shashlichnik.srtsexpanded"
   ],
+  "SelectedNode": "\\Patches\\shashlichnik.srtsexpanded\\size.xml",
   "PreviewInSolutionExplorer": false
 }

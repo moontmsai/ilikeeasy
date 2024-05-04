@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>SRTS Expanded (continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+
+			<operations>
+
+				<!-- 슈퍼포드, 스킵 유지 -->
+
+				<!-- 카나리아 드로우사이즈 가로x세로 15x15 -> 12x12 / 사이즈 5x9->3x5 -->
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRAF"]/graphicData/drawSize</xpath>
+					<value>
+						<drawSize>(9.5,9.5)</drawSize>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRAF"]/size</xpath>
+					<value>
+						<size>(3,5)</size>
+					</value>
+				</li>
+
+
+
+				<!-- TEK-7 드로우사이즈 가로x세로 15x15 -> 9.5x9.5 / 사이즈 5x9->3x5 -->
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRAFTek"]/graphicData/drawSize</xpath>
+					<value>
+						<drawSize>(9.5,9.5)</drawSize>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRAFTek"]/size</xpath>
+					<value>
+						<size>(3,5)</size>
+					</value>
+				</li>
+
+				<!-- 알바트로스 드로우사이즈 유지 / 사이즈 3x3->3x5-->
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRTSMkII"]/size</xpath>
+					<value>
+						<size>(3,5)</size>
+					</value>
+				</li>
+
+				<!-- 불사조 드로우사이즈 가로x세로 11x11 -> 9x9 / 사이즈 3x3->3x5 -->
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRTSMkIII"]/graphicData/drawSize</xpath>
+					<value>
+						<drawSize>(9,9)</drawSize>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRTSMkIII"]/size</xpath>
+					<value>
+						<size>(3,5)</size>
+					</value>
+				</li>
+
+				<!-- 팰리칸 드로우사이즈 가로x세로 25x25  -> 11x11 / 사이즈 11x9->5x5  -->
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRTSMkIIIp"]/graphicData/drawSize</xpath>
+					<value>
+						<drawSize>(11,11)</drawSize>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRTSMkIIIp"]/size</xpath>
+					<value>
+						<size>(5,5)</size>
+					</value>
+				</li>
+
+				<!-- 제네시스 드로우사이즈 가로x세로 9x9 -> 8x8 -->
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRTSMkIV"]/graphicData/drawSize</xpath>
+					<value>
+						<drawSize>(8.5,8.5)</drawSize>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRTSMkIV"]/size</xpath>
+					<value>
+						<size>(3,3)</size>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName = "SRTSMkIV"]/uiIconScale</xpath>
+					<value>
+						<uiIconScale>0.30</uiIconScale>
+					</value>
+				</li>
+
+				<!-- 제네시스 연구 필요에 펠리칸 추가 -->
+				<!--<li Class="PatchOperationReplace">
+					<xpath>*/ResearchProjectDef[defName = "Research_SRTSMkIV"]/prerequisites</xpath>
+					<value>
+						<prerequisites>
+							<li>Research_SRTSMkIII</li>
+							<li>Research_SRTSMkIIIp</li>
+						</prerequisites>
+					</value>
+				</li>-->
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
