@@ -3,7 +3,9 @@
     "",
     "\\Defs",
     "\\Patches",
-    "\\Patches\\Biotech"
+    "\\Patches\\Anomaly",
+    "\\Patches\\Biotech",
+    "\\Patches\\MYDE.DrakkenLaserDrill"
   ],
   "SelectedNode": "\\Patches\\Biotech\\recipe.xml",
   "PreviewInSolutionExplorer": false
