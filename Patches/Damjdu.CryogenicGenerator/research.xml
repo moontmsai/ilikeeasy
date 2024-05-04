@@ -78,7 +78,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Cryogenic Generator II</li>
+			<li>Cryogenic Generator III</li>
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>

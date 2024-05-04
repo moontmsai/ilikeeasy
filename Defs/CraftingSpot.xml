@@ -3,8 +3,8 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>MTCraftingSpot</defName>
-    <label>cheat crafting spot</label>
-    <description>A place for crafting simple items like knives or bows. Production here is slow because of the lack of tools.</description>
+    <label>치트 제작 장소</label>
+    <description>아이템을 창조하는 곳이다. 신비한 힘으로 소재없이 물건이 생산된다.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Building/Production/CraftingSpot</texPath>
