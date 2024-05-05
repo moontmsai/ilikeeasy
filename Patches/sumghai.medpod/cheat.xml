@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>MedPod</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@Name="MedPodBedBase"]/constructionSkillPrerequisite</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@Name="MedPodBedBase"]/techLevel</xpath>
+					<value>
+						<techLevel>Neolithic</techLevel>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@ParentName="MedPodBedBase"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="MedPodBedBase"]/costStuffCount</xpath>
+					<value>
+						<costStuffCount>1</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="MedPodBedBase"]/statBases/MarketValue</xpath>
+					<value>
+						<MarketValue>1000</MarketValue>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="MedPodBedBase"]/statBases/MarketValueIgnoreHp</xpath>
+					<value>
+						<MarketValueIgnoreHp>1000</MarketValueIgnoreHp>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="MedPodBedBase"]/comps/li[@Class="MedPod.CompProperties_MedPodSettings"]/diagnosisModePowerConsumption</xpath>
+					<value>
+						<diagnosisModePowerConsumption>500</diagnosisModePowerConsumption>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="MedPodBedBase"]/comps/li[@Class="MedPod.CompProperties_MedPodSettings"]/healingModePowerConsumption</xpath>
+					<value>
+						<healingModePowerConsumption>1000</healingModePowerConsumption>
+					</value>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

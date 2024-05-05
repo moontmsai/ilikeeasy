@@ -44,5 +44,6 @@ RT Solar Flare Shield - 연구 삭제
 SRTS Expanded (continued) - 연구항목을 통합하여 1개로 만들고 연구완료, 즉시 건설, 소재없음, 스킬 제한 없음 등등
 Harvest Organs Post Mortem - 연구 삭제
 Project RimFactory Revived - 연구 삭제, 건설 소재 삭제, 건물이 +1 전력생산 등등
-[TP]Blood (Continued) - 연구 삭제</description>
+[TP]Blood (Continued) - 연구 삭제
+MedPod - 연구 삭제, 건물 가치 1000, 전력소비량 변경(검사 500, 치료 1000), 건설 자재 삭제, 테크레벨 부족단계로 변경</description>
 </ModMetaData>
