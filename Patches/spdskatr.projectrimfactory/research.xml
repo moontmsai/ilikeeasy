@@ -46,7 +46,6 @@
 						@ParentName="PRF_BuildingBase" or
 						@ParentName="PRF_AssemblerBase" or
 						@ParentName="BiggerBatteries_BuildingBase" or
-						@ParentName="BenchBase" or
 						@ParentName="PRF_BenchBase" or
 						@ParentName="PRF_CookingBase" or
 						@ParentName="PRF_CultivatorBaseDrone" or
@@ -65,8 +64,15 @@
 						@ParentName="PRF_SAL_Base" or
 						@ParentName="PRF_MassStorageBase" or
 						@ParentName="PRF_FloorSign" or
-						@ParentName="FloorBase" or
 						@ParentName="PRF_ResourceBase"
+						]/researchPrerequisites
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[
+						defName="PRF_ResearchTerminal" or
+						defName="PRF_MineShaft"
 						]/researchPrerequisites
 					</xpath>
 				</li>
@@ -91,7 +97,6 @@
 						@ParentName="PRF_BuildingBase" or
 						@ParentName="PRF_AssemblerBase" or
 						@ParentName="BiggerBatteries_BuildingBase" or
-						@ParentName="BenchBase" or
 						@ParentName="PRF_BenchBase" or
 						@ParentName="PRF_CookingBase" or
 						@ParentName="PRF_CultivatorBaseDrone" or
@@ -110,8 +115,14 @@
 						@ParentName="PRF_SAL_Base" or
 						@ParentName="PRF_MassStorageBase" or
 						@ParentName="PRF_FloorSign" or
-						@ParentName="FloorBase" or
 						@ParentName="PRF_ResourceBase"
+						]/statBases/MarketValue
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[
+						defName="PRF_ResearchTerminal"
 						]/statBases/MarketValue
 					</xpath>
 				</li>
@@ -122,7 +133,6 @@
 						@ParentName="PRF_BuildingBase" or
 						@ParentName="PRF_AssemblerBase" or
 						@ParentName="BiggerBatteries_BuildingBase" or
-						@ParentName="BenchBase" or
 						@ParentName="PRF_BenchBase" or
 						@ParentName="PRF_CookingBase" or
 						@ParentName="PRF_CultivatorBaseDrone" or
@@ -141,8 +151,15 @@
 						@ParentName="PRF_SAL_Base" or
 						@ParentName="PRF_MassStorageBase" or
 						@ParentName="PRF_FloorSign" or
-						@ParentName="FloorBase" or
 						@ParentName="PRF_ResourceBase"
+						]/costList
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[
+						defName="PRF_ResearchTerminal" or
+						defName="PRF_MineShaft"
 						]/costList
 					</xpath>
 				</li>
@@ -154,13 +171,15 @@
 						]/stuffCategories
 					</xpath>
 				</li>
-				<li Class="PatchOperationRemove">
+				<li Class="PatchOperationReplace">
 					<xpath>
 						Defs/ThingDef[
-						defName="PRF_FurnaceI" or
-						defName="PRF_MiniDroneColumn"
+						defName="PRF_MineShaft"
 						]/costStuffCount
 					</xpath>
+					<value>
+						<costStuffCount>1</costStuffCount>
+					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>
@@ -169,7 +188,6 @@
 						@ParentName="PRF_BuildingBase" or
 						@ParentName="PRF_AssemblerBase" or
 						@ParentName="BiggerBatteries_BuildingBase" or
-						@ParentName="BenchBase" or
 						@ParentName="PRF_BenchBase" or
 						@ParentName="PRF_CookingBase" or
 						@ParentName="PRF_CultivatorBaseDrone" or
@@ -188,7 +206,6 @@
 						@ParentName="PRF_SAL_Base" or
 						@ParentName="PRF_MassStorageBase" or
 						@ParentName="PRF_FloorSign" or
-						@ParentName="FloorBase" or
 						@ParentName="PRF_ResourceBase"
 						]/techLevel
 					</xpath>
@@ -203,7 +220,6 @@
 						@ParentName="PRF_BuildingBase" or
 						@ParentName="PRF_AssemblerBase" or
 						@ParentName="BiggerBatteries_BuildingBase" or
-						@ParentName="BenchBase" or
 						@ParentName="PRF_BenchBase" or
 						@ParentName="PRF_CookingBase" or
 						@ParentName="PRF_CultivatorBaseDrone" or
@@ -222,8 +238,21 @@
 						@ParentName="PRF_SAL_Base" or
 						@ParentName="PRF_MassStorageBase" or
 						@ParentName="PRF_FloorSign" or
-						@ParentName="FloorBase" or
 						@ParentName="PRF_ResourceBase"
+						]/comps/li[@Class="CompProperties_Power"]
+					</xpath>
+					<value>
+						<li Class="CompProperties_Power">
+							<compClass>CompPowerTrader</compClass>
+							<basePowerConsumption>-1</basePowerConsumption>
+							<shortCircuitInRain>false</shortCircuitInRain>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[
+						defName="PRF_ResearchTerminal"
 						]/comps/li[@Class="CompProperties_Power"]
 					</xpath>
 					<value>
@@ -241,7 +270,6 @@
 						@ParentName="PRF_BuildingBase" or
 						@ParentName="PRF_AssemblerBase" or
 						@ParentName="BiggerBatteries_BuildingBase" or
-						@ParentName="BenchBase" or
 						@ParentName="PRF_BenchBase" or
 						@ParentName="PRF_CookingBase" or
 						@ParentName="PRF_CultivatorBaseDrone" or
@@ -260,8 +288,14 @@
 						@ParentName="PRF_SAL_Base" or
 						@ParentName="PRF_MassStorageBase" or
 						@ParentName="PRF_FloorSign" or
-						@ParentName="FloorBase" or
 						@ParentName="PRF_ResourceBase"
+						]/constructionSkillPrerequisite
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[
+						defName="PRF_ResearchTerminal"
 						]/constructionSkillPrerequisite
 					</xpath>
 				</li>

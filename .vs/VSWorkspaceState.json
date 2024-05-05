@@ -3,9 +3,9 @@
     "",
     "\\About",
     "\\Patches",
-    "\\Patches\\shashlichnik.srtsexpanded",
-    "\\Patches\\spdskatr.projectrimfactory"
+    "\\Patches\\spdskatr.projectrimfactory",
+    "\\Patches\\sumghai.medpod"
   ],
-  "SelectedNode": "\\Patches\\shashlichnik.srtsexpanded\\costlist.xml",
+  "SelectedNode": "\\About\\About.xml",
   "PreviewInSolutionExplorer": false
 }
