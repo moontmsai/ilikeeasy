@@ -36,6 +36,22 @@
 						Defs/ThingDef[defName="CryogenicPowerGeneratorI"]/constructionSkillPrerequisite
 					</xpath>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorI"]/graphicData/drawSize
+					</xpath>
+					<value>
+						<drawSize>(2,2)</drawSize>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorI"]/size
+					</xpath>
+					<value>
+						<size>(2,2)</size>
+					</value>
+				</li>
             </operations>
         </match>
     </Operation>
@@ -72,6 +88,22 @@
 						Defs/ThingDef[defName="CryogenicPowerGeneratorII"]/constructionSkillPrerequisite
 					</xpath>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorII"]/graphicData/drawSize
+					</xpath>
+					<value>
+						<drawSize>(2,2)</drawSize>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorII"]/size
+					</xpath>
+					<value>
+						<size>(2,2)</size>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
@@ -107,6 +139,22 @@
 					<xpath>
 						Defs/ThingDef[defName="CryogenicPowerGeneratorIII"]/constructionSkillPrerequisite
 					</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorIII"]/graphicData/drawSize
+					</xpath>
+					<value>
+						<drawSize>(2,2)</drawSize>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorIII"]/size
+					</xpath>
+					<value>
+						<size>(2,2)</size>
+					</value>
 				</li>
 			</operations>
 		</match>

@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\About",
     "\\Patches",
-    "\\Patches\\shashlichnik.srtsexpanded"
+    "\\Patches\\shashlichnik.srtsexpanded",
+    "\\Patches\\spdskatr.projectrimfactory"
   ],
-  "SelectedNode": "\\Patches\\shashlichnik.srtsexpanded\\size.xml",
+  "SelectedNode": "\\Patches\\shashlichnik.srtsexpanded\\costlist.xml",
   "PreviewInSolutionExplorer": false
 }
