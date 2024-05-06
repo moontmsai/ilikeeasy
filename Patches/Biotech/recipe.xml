@@ -44,23 +44,6 @@
 								<ArchiteCapsule>1</ArchiteCapsule>
 							</products>
 						</RecipeDef>
-						<RecipeDef>
-							<defName>Make_GeneLibrary_Cheat</defName>
-							<label>유전자 라이브러리 제작</label>
-							<description>유전자 라이브러리를 제작한다.</description>
-							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-							<effectWorking>CutStone</effectWorking>
-							<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-							<targetCountAdjustment>20</targetCountAdjustment>
-							<workSkill>Crafting</workSkill>
-							<recipeUsers>
-								<li>MTCraftingSpot</li>
-							</recipeUsers>
-							<workAmount>1</workAmount>
-							<products>
-								<GeneLibrary>1</GeneLibrary>
-							</products>
-						</RecipeDef>
                     </value>
                 </li>
             </operations>

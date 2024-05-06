@@ -30,6 +30,16 @@
 						<WorkToBuild>1</WorkToBuild>
 					</value>
 				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[
+						defName="MYDE_Building_DrakkenLaserDrill" or
+						defName="MYDE_Building_DrakkenLaserDrill_UpdateEnergy" or
+						defName="MYDE_Building_DrakkenLaserDrill_UpdateDamage" or
+						defName="MYDE_Building_DrakkenLaserDrill_UpdateAP"
+						]/constructionSkillPrerequisite
+					</xpath>
+				</li>
             </operations>
         </match>
     </Operation>

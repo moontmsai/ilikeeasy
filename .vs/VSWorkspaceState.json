@@ -3,9 +3,10 @@
     "",
     "\\About",
     "\\Patches",
+    "\\Patches\\Core",
     "\\Patches\\spdskatr.projectrimfactory",
     "\\Patches\\sumghai.medpod"
   ],
-  "SelectedNode": "\\About\\About.xml",
+  "SelectedNode": "\\Patches\\Core\\transport_pod.xml",
   "PreviewInSolutionExplorer": false
 }
