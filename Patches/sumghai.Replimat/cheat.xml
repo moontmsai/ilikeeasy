@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Replimat</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@ParentName="ReplimatBase"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="ReplimatBase"]/statBases/MarketValue</xpath>
+					<value>
+						<MarketValue>200</MarketValue>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[@ParentName="ReplimatBase"]/statBases/MarketValueIgnoreHp</xpath>
+					<value>
+						<MarketValueIgnoreHp>200</MarketValueIgnoreHp>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@ParentName="ReplimatBase"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[@ParentName="ReplimatBase"]/comps/li[@Class="Replimat.CompProperties_StateDependentPowerUse"]</xpath>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

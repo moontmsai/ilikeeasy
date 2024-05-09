@@ -3,10 +3,8 @@
     "",
     "\\About",
     "\\Patches",
-    "\\Patches\\Core",
-    "\\Patches\\spdskatr.projectrimfactory",
-    "\\Patches\\sumghai.medpod"
+    "\\Patches\\Biotech"
   ],
-  "SelectedNode": "\\Patches\\Core\\transport_pod.xml",
+  "SelectedNode": "\\Patches\\Goat.Gene.Library",
   "PreviewInSolutionExplorer": false
 }
