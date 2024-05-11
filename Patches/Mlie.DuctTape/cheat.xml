@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Duct Tape! (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DT_DuctTape"]/techLevel</xpath>
+					<value>
+						<techLevel>Neolithic</techLevel>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DT_DuctTape"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MarketValue>1</MarketValue>
+							<Mass>0.25</Mass>
+							<Flammability>0.3</Flammability>
+							<MedicalPotency>2.50</MedicalPotency>
+							<MedicalQualityMax>2.50</MedicalQualityMax>
+							<DeteriorationRate>1</DeteriorationRate>
+							<WorkToMake>10</WorkToMake>
+							<StuffPower_Armor_Sharp>6.00</StuffPower_Armor_Sharp>
+							<StuffPower_Armor_Blunt>6.00</StuffPower_Armor_Blunt>
+							<StuffPower_Armor_Heat>6.88</StuffPower_Armor_Heat>
+							<StuffPower_Insulation_Cold>70</StuffPower_Insulation_Cold>
+							<StuffPower_Insulation_Heat>70</StuffPower_Insulation_Heat>
+							<SharpDamageMultiplier>4.25</SharpDamageMultiplier>
+							<BluntDamageMultiplier>4.25</BluntDamageMultiplier>
+						</statBases>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="DT_DuctTape"]/stuffProps/statFactors</xpath>
+					<value>
+						<statFactors>
+							<MaxHitPoints>2.4</MaxHitPoints>
+							<Beauty>1</Beauty>
+							<Flammability>0</Flammability>
+							<WorkToMake>0.4</WorkToMake>
+							<WorkToBuild>0.4</WorkToBuild>
+							<MeleeWeapon_CooldownMultiplier>0.5</MeleeWeapon_CooldownMultiplier>
+							<DoorOpenSpeed>1.5</DoorOpenSpeed>
+						</statFactors>
+					</value>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

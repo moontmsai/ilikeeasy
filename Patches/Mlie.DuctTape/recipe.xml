@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Duct Tape! (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+					<value>
+						<RecipeDef>
+							<defName>MakeDT_DuctTape_cheat</defName>
+							<label>덕트 테이프 x40 제작</label>
+							<description>덕트 테이프를 제작한다.(x40)</description>
+							<jobString>덕트 테이프를 제작한다.</jobString>
+							<workSkill>Crafting</workSkill>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>Smith</effectWorking>
+							<soundWorking>Recipe_Smith</soundWorking>
+							<recipeUsers>
+								<li>MTCraftingSpot</li>
+							</recipeUsers>
+							<targetCountAdjustment>1</targetCountAdjustment>
+							<allowMixingIngredients>true</allowMixingIngredients>
+							<workAmount>40</workAmount>
+							<products>
+								<DT_DuctTape>40</DT_DuctTape>
+							</products>
+						</RecipeDef>
+					</value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
