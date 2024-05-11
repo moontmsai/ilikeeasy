@@ -3,8 +3,9 @@
     "",
     "\\About",
     "\\Patches",
-    "\\Patches\\Biotech"
+    "\\Patches\\Biotech",
+    "\\Patches\\sumghai.Replimat"
   ],
-  "SelectedNode": "\\Patches\\Goat.Gene.Library",
+  "SelectedNode": "\\About\\About.xml",
   "PreviewInSolutionExplorer": false
 }

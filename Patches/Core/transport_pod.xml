@@ -71,4 +71,16 @@
 		<xpath>Defs/ThingDef[defName="TransportPod"]/constructionSkillPrerequisite</xpath>
 	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="TransportPod"]/comps/li[@Class="CompProperties_Transporter"]</xpath>
+		<value>
+			<li Class="CompProperties_Transporter">
+				<restEffectiveness>0.8</restEffectiveness>
+				<canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+				<massCapacity>1500</massCapacity>
+			</li>
+		</value>
+	</Operation>
+
 </Patch>
