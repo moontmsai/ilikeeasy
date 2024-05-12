@@ -49,5 +49,6 @@ MedPod - 연구 삭제, 건물 가치 1000, 전력소비량 변경(검사 500, �
 GeneLibrary - (소재없이) 유전자 라이브러리 제작
 Replimat - 연구 삭제, 건물 가치 200, 전력소비량 삭제(전선 연결은 필수), 건설 자재 삭제
 Duct Tape! (Continued) - 성능 강화, 테크레벨 부족단계로 변경 등등
+NR_AutoMachineTool (Continued) - 연구 삭제, 즉시 건설, 건설 자재 없음, 건설 스킬제한 없음
 	</description>
 </ModMetaData>

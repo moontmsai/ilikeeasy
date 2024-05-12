@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>NR_AutoMachineTool (Continued)</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[
+						defName="Building_NR_AutoMachineTool_AnimalResourceGatherer" or
+						defName="Building_NR_AutoMachineTool_Cleaner" or
+						defName="Building_NR_AutoMachineTool_BeltConveyor_Base" or
+						@Name="Building_NR_AutoMachineTool_BeltConveyorUGConnecter_Base" or
+						defName="Building_NR_AutoMachineTool_Generator" or
+						defName="Building_NR_AutoMachineTool_Harvester_TierOne" or
+						defName="Building_NR_AutoMachineTool_Harvester_TierTwo" or
+						defName="Building_NR_AutoMachineTool_Harvester_TierThree" or
+						defName="NR_AutoMachineTool_MaterialMachine" or
+						defName="Building_NR_AutoMachineTool_Miner" or
+						defName="Building_NR_AutoMachineTool_Planter_TierOne" or
+						defName="Building_NR_AutoMachineTool_Planter_TierTwo" or
+						defName="Building_NR_AutoMachineTool_Planter_TierThree" or
+						defName="Building_NR_AutoMachineTool_Puller_Base" or
+						defName="Building_NR_AutoMachineTool_Repairer" or
+						defName="Building_NR_AutoMachineTool_Shield" or
+						defName="Building_NR_AutoMachineTool_Slaughterhouse" or
+						defName="Building_NR_AutoMachineTool_Stunner" or
+						defName="Building_NR_AutoMachineTool_WallLight" or
+						defName="Building_NR_AutoMachineTool_TierOne" or
+						defName="Building_NR_AutoMachineTool_TierTwo" or
+						defName="Building_NR_AutoMachineTool_TierThree"
+						]/costList
+					</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[
+						defName="Building_NR_AutoMachineTool_AnimalResourceGatherer" or
+						defName="Building_NR_AutoMachineTool_Cleaner" or
+						defName="Building_NR_AutoMachineTool_BeltConveyor_Base" or
+						@Name="Building_NR_AutoMachineTool_BeltConveyorUGConnecter_Base" or
+						defName="Building_NR_AutoMachineTool_Generator" or
+						defName="Building_NR_AutoMachineTool_Harvester_TierOne" or
+						defName="Building_NR_AutoMachineTool_Harvester_TierTwo" or
+						defName="Building_NR_AutoMachineTool_Harvester_TierThree" or
+						defName="NR_AutoMachineTool_MaterialMachine" or
+						defName="Building_NR_AutoMachineTool_Miner" or
+						defName="Building_NR_AutoMachineTool_Planter_TierOne" or
+						defName="Building_NR_AutoMachineTool_Planter_TierTwo" or
+						defName="Building_NR_AutoMachineTool_Planter_TierThree" or
+						defName="Building_NR_AutoMachineTool_Puller_Base" or
+						defName="Building_NR_AutoMachineTool_Repairer" or
+						defName="Building_NR_AutoMachineTool_Shield" or
+						defName="Building_NR_AutoMachineTool_Slaughterhouse" or
+						defName="Building_NR_AutoMachineTool_Stunner" or
+						defName="Building_NR_AutoMachineTool_WallLight" or
+						defName="Building_NR_AutoMachineTool_TierOne" or
+						defName="Building_NR_AutoMachineTool_TierTwo" or
+						defName="Building_NR_AutoMachineTool_TierThree"
+						]/statBases/WorkToBuild
+					</xpath>
+					<value>
+						<WorkToBuild>1</WorkToBuild>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[
+						defName="Building_NR_AutoMachineTool_AnimalResourceGatherer" or
+						defName="Building_NR_AutoMachineTool_Cleaner" or
+						defName="Building_NR_AutoMachineTool_BeltConveyor_Base" or
+						@Name="Building_NR_AutoMachineTool_BeltConveyorUGConnecter_Base" or
+						defName="Building_NR_AutoMachineTool_Generator" or
+						defName="Building_NR_AutoMachineTool_Harvester_TierOne" or
+						defName="Building_NR_AutoMachineTool_Harvester_TierTwo" or
+						defName="Building_NR_AutoMachineTool_Harvester_TierThree" or
+						defName="NR_AutoMachineTool_MaterialMachine" or
+						defName="Building_NR_AutoMachineTool_Miner" or
+						defName="Building_NR_AutoMachineTool_Planter_TierOne" or
+						defName="Building_NR_AutoMachineTool_Planter_TierTwo" or
+						defName="Building_NR_AutoMachineTool_Planter_TierThree" or
+						defName="Building_NR_AutoMachineTool_Puller_Base" or
+						defName="Building_NR_AutoMachineTool_Repairer" or
+						defName="Building_NR_AutoMachineTool_Shield" or
+						defName="Building_NR_AutoMachineTool_Slaughterhouse" or
+						defName="Building_NR_AutoMachineTool_Stunner" or
+						defName="Building_NR_AutoMachineTool_WallLight" or
+						defName="Building_NR_AutoMachineTool_TierOne" or
+						defName="Building_NR_AutoMachineTool_TierTwo" or
+						defName="Building_NR_AutoMachineTool_TierThree"
+						]/constructionSkillPrerequisite
+					</xpath>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
