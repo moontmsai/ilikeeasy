@@ -7,48 +7,49 @@
 		<li>1.5</li>
 	</supportedVersions>
 	<description>
-I like easy!
-This is strictly my personal preference.
-// This mod is in Korean.
+		I like easy!
+		This is strictly my personal preference.
+		// This mod is in Korean.
 
-'기타' 항목에 '치트 제작 장소'가 있다.
-- 치트 제작장소에서 불공정한 생산을 한다. (예: 소재없이 감자 제작(x100) 등등)
-- 테이블 없이 식사할 경우 무드 보너스 3을 얻는다.
-- 5000의 전력을 생산하는 '불안정한 발전기' 건설 가능.
-등등 잡다한 기능이 있다.
+		'기타' 항목에 '치트 제작 장소'가 있다.
+		- 치트 제작장소에서 불공정한 생산을 한다. (예: 소재없이 감자 제작(x100) 등등)
+		- 테이블 없이 식사할 경우 무드 보너스 3을 얻는다.
+		- 5000의 전력을 생산하는 '불안정한 발전기' 건설 가능.
+		등등 잡다한 기능이 있다.
 
-[Patched Mods list]
-Core - 흡습펌프 가속, (소재없이)반물질탄 제작, 막사 디버프 감소, 터렛 총알 무한, 타일바닥 가치 1로 고정
-Biotech - 메크링크 제작, 초월입자 캡슐 제작
-Anomaly - (소재없이)생체강철, 조각, 뒤틀린고기, 포탑 팩, 죽은 목숨 팩, 교란 신호탄 팩, 헬캣 소총, 소각기, 생체변이 랜스 제작
-Misc. Robots - (소재없이) 운반로봇, 청소로봇 제작
-Misc. Robots addition - (소재없이) 기타로봇 제작
-Cryogenic Generator I, II, III - 연구 탭 삭제, 연구 삭제, 제작소재 삭제, 제작 스킬제한 삭제, 즉시 건설
-MTstimpak - (소재없이) 스팀팩 제작
-Reinforced Blocks - (소재없이) 강화 석재 제작
-Stonysteel - (소재없이) 석철 제작
-Impact Weaponry - 연구 삭제, 스킬제한 삭제, 테크레벨 부족단계로 변경
-Dubs Rimatomics - 매우 빠른연구, 강철1개로 건설, 스킬제한 제거, 쿨링 용량 증가, PPC 에너지 용량 증가
-Furnace - 연구 삭제
-Tilled Soil - 연구 삭제
-Pocket Dimensions (Continued) - 연구항목을 하나로 통합하여 연구완료. 강철 1개 부터 건설시작
-Questionable Ethics Enhanced (Continued) - 연구 삭제, 테크 레벨 산업단계로 변경
-Tiny Workbenchs (Continued) - 연구 삭제, 제작속도 100% 등등
-Aerocraft Framework - 연구 삭제, MYDE_AF_RotorCraft_FourPropeller 소재없이 즉시 생산, 연료소비 삭제
-Drakken Laser Drill - 연구 삭제, 건설소재 삭제, 즉시 건설
-Utility Columns - 연구 삭제, 스킬제한 삭제, 가치 1000으로 변경
-[1.5] Nukes - 연구 삭제(에러 발생하나 플레이 지장없음), 소재없이 생산
-RT Fuse - 연구탭, 연구 삭제, 용량을 100만으로 증가
-RT Power Switch - 연구 삭제
-RT Solar Flare Shield - 연구 삭제
-SRTS Expanded (continued) - 연구항목을 통합하여 1개로 만들고 연구완료, 즉시 건설, 소재없음, 스킬 제한 없음 등등
-Harvest Organs Post Mortem - 연구 삭제
-Project RimFactory Revived - 연구 삭제, 건설 소재 삭제, 건물이 +1 전력생산 등등
-[TP]Blood (Continued) - 연구 삭제
-MedPod - 연구 삭제, 건물 가치 1000, 전력소비량 변경(검사 500, 치료 1000), 건설 자재 삭제, 테크레벨 부족단계로 변경 등등
-GeneLibrary - (소재없이) 유전자 라이브러리 제작
-Replimat - 연구 삭제, 건물 가치 200, 전력소비량 삭제(전선 연결은 필수), 건설 자재 삭제
-Duct Tape! (Continued) - 성능 강화, 테크레벨 부족단계로 변경 등등
-NR_AutoMachineTool (Continued) - 연구 삭제, 즉시 건설, 건설 자재 없음, 건설 스킬제한 없음
+		[Patched Mods list]
+		Core - 흡습펌프 가속, (소재없이)반물질탄 제작, 막사 디버프 감소, 터렛 총알 무한, 타일바닥 가치 1로 고정
+		Ideology - Autobong 건설 소재 삭제, 연초 소모 없음, 즉시 건설, 사상제한 삭제.
+		Biotech - 메크링크 제작, 초월입자 캡슐 제작
+		Anomaly - (소재없이)생체강철, 조각, 뒤틀린고기, 포탑 팩, 죽은 목숨 팩, 교란 신호탄 팩, 헬캣 소총, 소각기, 생체변이 랜스 제작
+		Misc. Robots - (소재없이) 운반로봇, 청소로봇 제작
+		Misc. Robots addition - (소재없이) 기타로봇 제작
+		Cryogenic Generator I, II, III - 연구 탭 삭제, 연구 삭제, 제작소재 삭제, 제작 스킬제한 삭제, 즉시 건설
+		MTstimpak - (소재없이) 스팀팩 제작
+		Reinforced Blocks - (소재없이) 강화 석재 제작
+		Stonysteel - (소재없이) 석철 제작
+		Impact Weaponry - 연구 삭제, 스킬제한 삭제, 테크레벨 부족단계로 변경
+		Dubs Rimatomics - 매우 빠른연구, 강철1개로 건설, 스킬제한 제거, 쿨링 용량 증가, PPC 에너지 용량 증가
+		Furnace - 연구 삭제
+		Tilled Soil - 연구 삭제
+		Pocket Dimensions (Continued) - 연구항목을 하나로 통합하여 연구완료. 강철 1개 부터 건설시작
+		Questionable Ethics Enhanced (Continued) - 연구 삭제, 테크 레벨 산업단계로 변경
+		Tiny Workbenchs (Continued) - 연구 삭제, 제작속도 100% 등등
+		Aerocraft Framework - 연구 삭제, MYDE_AF_RotorCraft_FourPropeller 소재없이 즉시 생산, 연료소비 삭제
+		Drakken Laser Drill - 연구 삭제, 건설소재 삭제, 즉시 건설
+		Utility Columns - 연구 삭제, 스킬제한 삭제, 가치 1000으로 변경
+		[1.5] Nukes - 연구 삭제(에러 발생하나 플레이 지장없음), 소재없이 생산
+		RT Fuse - 연구탭, 연구 삭제, 용량을 100만으로 증가
+		RT Power Switch - 연구 삭제
+		RT Solar Flare Shield - 연구 삭제
+		SRTS Expanded (continued) - 연구항목을 통합하여 1개로 만들고 연구완료, 즉시 건설, 소재없음, 스킬 제한 없음 등등
+		Harvest Organs Post Mortem - 연구 삭제
+		Project RimFactory Revived - 연구 삭제, 건설 소재 삭제, 건물이 +1 전력생산 등등
+		[TP]Blood (Continued) - 연구 삭제
+		MedPod - 연구 삭제, 건물 가치 1000, 전력소비량 변경(검사 500, 치료 1000), 건설 자재 삭제, 테크레벨 부족단계로 변경 등등
+		GeneLibrary - (소재없이) 유전자 라이브러리 제작
+		Replimat - 연구 삭제, 건물 가치 200, 전력소비량 삭제(전선 연결은 필수), 건설 자재 삭제
+		Duct Tape! (Continued) - 성능 강화, 테크레벨 부족단계로 변경 등등
+		NR_AutoMachineTool (Continued) - 연구 삭제, 즉시 건설, 건설 자재 없음, 건설 스킬제한 없음
 	</description>
 </ModMetaData>

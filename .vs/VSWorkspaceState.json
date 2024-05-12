@@ -4,7 +4,9 @@
     "\\About",
     "\\Patches",
     "\\Patches\\Anomaly",
-    "\\Patches\\Mlie.DuctTape"
+    "\\Patches\\Mlie.NRAutoMachineTool",
+    "\\Patches\\Mlie.TinyWorkbenchs"
   ],
+  "SelectedNode": "\\Patches\\Mlie.NRAutoMachineTool\\research.xml",
   "PreviewInSolutionExplorer": false
 }

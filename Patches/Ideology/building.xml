@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Autobong"]</xpath>
+					<value>
+						<ThingDef ParentName="BuildingBase">
+							<defName>Autobong</defName>
+							<label>autobong</label>
+							<description>An automatic smokeleaf-burning device which generates a smoke cloud around itself. Anyone in the cloud will become high on smokeleaf over time.</description>
+							<category>Building</category>
+							<graphicData>
+								<texPath>Things/Building/Misc/Autobong/Autobong</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>(2,2)</drawSize>
+								<shaderType>CutoutComplex</shaderType>
+							</graphicData>
+							<uiIconPath>Things/Building/Misc/Autobong/Autobong</uiIconPath>
+							<altitudeLayer>Building</altitudeLayer>
+							<passability>PassThroughOnly</passability>
+							<pathCost>42</pathCost>
+							<tickerType>Normal</tickerType>
+							<drawerType>RealtimeOnly</drawerType>
+							<fillPercent>0.20</fillPercent>
+							<size>(2,2)</size>
+							<statBases>
+								<MaxHitPoints>80</MaxHitPoints>
+								<WorkToBuild>1</WorkToBuild>
+							</statBases>
+							<selectable>true</selectable>
+							<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+							<comps>
+								<li Class="CompProperties_Glower">
+									<glowRadius>10</glowRadius>
+									<glowColor>(252,187,113,0)</glowColor>
+								</li>
+								<li>
+									<compClass>CompGatherSpot</compClass>
+								</li>
+								<li Class="CompProperties_Power">
+									<compClass>CompPowerTrader</compClass>
+									<basePowerConsumption>150</basePowerConsumption>
+									<shortCircuitInRain>true</shortCircuitInRain>
+								</li>
+								<li Class="CompProperties_Flickable"/>
+								<li Class="CompProperties_GiveHediffSeverity">
+									<hediff>SmokeleafHigh</hediff>
+									<range>4.9</range>
+									<severityPerSecond>0.005</severityPerSecond>
+									<drugExposure>true</drugExposure>
+									<chemical>Smokeleaf</chemical>
+									<allowMechs>false</allowMechs>
+								</li>
+								<li Class="CompProperties_SmokeCloudMaker">
+									<sourceStreamEffect>BurnbongSmoke</sourceStreamEffect>
+									<cloudRadius>4.9</cloudRadius>
+									<fleckScale>4</fleckScale>
+									<cloudFleck>AutobongSmoke</cloudFleck>
+									<fleckSpawnMTB>25</fleckSpawnMTB>
+								</li>
+							</comps>
+							<designationCategory>Ideology</designationCategory>
+							<uiOrder>2110</uiOrder>
+							<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+							<placeWorkers>
+								<li>PlaceWorker_SmokeCloudMaker</li>
+							</placeWorkers>
+						</ThingDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
