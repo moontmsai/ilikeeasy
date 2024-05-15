@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\About",
+    "\\Defs",
     "\\Patches",
-    "\\Patches\\Anomaly",
-    "\\Patches\\Mlie.NRAutoMachineTool",
-    "\\Patches\\Mlie.TinyWorkbenchs"
+    "\\Patches\\Biotech",
+    "\\Patches\\Ideology",
+    "\\Patches\\Mlie.NRAutoMachineTool"
   ],
-  "SelectedNode": "\\Patches\\Mlie.NRAutoMachineTool\\research.xml",
+  "SelectedNode": "\\Patches\\Biotech\\recipe.xml",
   "PreviewInSolutionExplorer": false
 }

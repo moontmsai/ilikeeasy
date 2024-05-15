@@ -6,6 +6,40 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchTabDef[defName="Rimatomics"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="RimatomicsActivate"]/tab</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="RimatomicsActivate"]/baseCost</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="RimatomicsActivate"]/prerequisites</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ResearchProjectDef[defName="RimatomicsActivate"]/requiredResearchBuilding</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="RimatomicsActivate"]/techLevel</xpath>
+					<value>
+						<techLevel>Neolithic</techLevel>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="RimatomicsActivate"]/researchViewX</xpath>
+					<value>
+						<researchViewX>2.0</researchViewX>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ResearchProjectDef[defName="RimatomicsActivate"]/researchViewY</xpath>
+					<value>
+						<researchViewY>0.6</researchViewY>
+					</value>
+				</li>
+				
                 <li Class="PatchOperationRemove">
                     <xpath>Defs/Def[price]/price</xpath>
                 </li>

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ilikeeasy\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ilikeeasy\\Patches\\Mlie.NRAutoMachineTool\\cheat.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Patches\\Mlie.NRAutoMachineTool\\cheat.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ilikeeasy\\Patches\\Mlie.NRAutoMachineTool\\research.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Patches\\Mlie.NRAutoMachineTool\\research.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ilikeeasy\\About\\About.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:About\\About.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
@@ -19,12 +27,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "cheat.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ilikeeasy\\Patches\\Mlie.NRAutoMachineTool\\cheat.xml",
+              "RelativeDocumentMoniker": "Patches\\Mlie.NRAutoMachineTool\\cheat.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ilikeeasy\\Patches\\Mlie.NRAutoMachineTool\\cheat.xml",
+              "RelativeToolTip": "Patches\\Mlie.NRAutoMachineTool\\cheat.xml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAC0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-05-15T12:40:35.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "research.xml",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ilikeeasy\\Patches\\Mlie.NRAutoMachineTool\\research.xml",
+              "RelativeDocumentMoniker": "Patches\\Mlie.NRAutoMachineTool\\research.xml",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ilikeeasy\\Patches\\Mlie.NRAutoMachineTool\\research.xml",
+              "RelativeToolTip": "Patches\\Mlie.NRAutoMachineTool\\research.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-05-15T12:40:19.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "About.xml",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ilikeeasy\\About\\About.xml",
               "RelativeDocumentMoniker": "About\\About.xml",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\ilikeeasy\\About\\About.xml",
               "RelativeToolTip": "About\\About.xml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAmwDIAAAAwAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAmwCsAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2024-05-05T01:50:34.819Z",
               "EditorCaption": ""
