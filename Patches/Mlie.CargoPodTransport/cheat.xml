@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Cargo Pod Transport (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Building_Helicopter"]/costList</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Building_Helicopter"]/constructionSkillPrerequisite</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Building_Helicopter"]/statBases/WorkToBuild</xpath>
+					<value>
+						<WorkToBuild>1</WorkToBuild>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="Building_Helicopter"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+					<value>
+						<li Class="CompProperties_Refuelable">
+							<fuelCapacity>400.0</fuelCapacity>
+							<fuelConsumptionRate>0</fuelConsumptionRate>
+							<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+							<initialConfigurableTargetFuelLevel>75</initialConfigurableTargetFuelLevel>
+							<fuelFilter>
+								<thingDefs>
+									<li>Chemfuel</li>
+								</thingDefs>
+							</fuelFilter>
+							<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+							<autoRefuelPercent>1</autoRefuelPercent>
+							<showFuelGizmo>true</showFuelGizmo>
+							<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+							<drawFuelGaugeInMap>true</drawFuelGaugeInMap>
+							<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+							<initialFuelPercent>1</initialFuelPercent>
+						</li>
+					</value>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

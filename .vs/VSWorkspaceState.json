@@ -4,10 +4,8 @@
     "\\About",
     "\\Defs",
     "\\Patches",
-    "\\Patches\\Biotech",
-    "\\Patches\\Ideology",
-    "\\Patches\\Mlie.NRAutoMachineTool"
+    "\\Patches\\Core"
   ],
-  "SelectedNode": "\\Patches\\Biotech\\recipe.xml",
+  "SelectedNode": "\\Patches\\Core\\transport_pod.xml",
   "PreviewInSolutionExplorer": false
 }
