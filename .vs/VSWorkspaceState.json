@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\About",
-    "\\Defs",
     "\\Patches",
-    "\\Patches\\Core"
+    "\\Patches\\Core",
+    "\\Patches\\Mlie.CargoPodTransport"
   ],
   "SelectedNode": "\\Patches\\Core\\transport_pod.xml",
   "PreviewInSolutionExplorer": false

@@ -24,8 +24,13 @@
 				<li Class="PatchOperationRemove">
 					<xpath>Defs/ThingDef[@ParentName="ReplimatBase"]/comps/li[@Class="CompProperties_Power"]/basePowerConsumption</xpath>
 				</li>
-				<li Class="PatchOperationRemove">
+				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[@ParentName="ReplimatBase"]/comps/li[@Class="Replimat.CompProperties_StateDependentPowerUse"]</xpath>
+					<value>
+						<li Class="Replimat.CompProperties_StateDependentPowerUse">
+							<activeModePowerConsumption>1000</activeModePowerConsumption>
+						</li>
+					</value>
 				</li>
             </operations>
         </match>
