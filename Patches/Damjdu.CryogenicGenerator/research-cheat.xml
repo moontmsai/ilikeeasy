@@ -52,6 +52,41 @@
 						<size>(2,2)</size>
 					</value>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorI"]/comps
+					</xpath>
+					<value>
+						<comps>
+							<li Class="CompProperties_Power">
+								<compClass>CompPowerPlant</compClass>
+								<basePowerConsumption>-8000</basePowerConsumption>
+								<transmitsPower>true</transmitsPower>
+								<shortCircuitInRain>true</shortCircuitInRain>
+							</li>
+							<li Class="CompProperties_Glower">
+								<glowRadius>8</glowRadius>
+								<glowColor>(0,200,250,0)</glowColor>
+							</li>
+							<li Class="CompProperties_Breakdownable"/>
+							<li Class="CompProperties_HeatPusher">
+								<compClass>CompHeatPusherPowered</compClass>
+								<heatPerSecond>-100</heatPerSecond>
+								<heatPushMinTemperature>22</heatPushMinTemperature>
+							</li>
+							<li Class="CompProperties_SnowExpand">
+								<addAmount>0.10</addAmount>
+								<expandInterval>1000</expandInterval>
+								<maxRadius>15</maxRadius>
+							</li>
+							<li Class="CompProperties_Explosive">
+								<explosiveRadius>8.0</explosiveRadius>
+								<explosiveDamageType>Bomb</explosiveDamageType>
+								<chanceNeverExplodeFromDamage>0.0</chanceNeverExplodeFromDamage>
+							</li>
+						</comps>
+					</value>
+				</li>
             </operations>
         </match>
     </Operation>
@@ -104,6 +139,41 @@
 						<size>(2,2)</size>
 					</value>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorII"]/comps
+					</xpath>
+					<value>
+						<comps>
+							<li Class="CompProperties_Power">
+								<compClass>CompPowerPlant</compClass>
+								<basePowerConsumption>-16000</basePowerConsumption>
+								<transmitsPower>true</transmitsPower>
+								<shortCircuitInRain>true</shortCircuitInRain>
+							</li>
+							<li Class="CompProperties_Glower">
+								<glowRadius>8</glowRadius>
+								<glowColor>(0,200,250,0)</glowColor>
+							</li>
+							<li Class="CompProperties_Breakdownable"/>
+							<li Class="CompProperties_HeatPusher">
+								<compClass>CompHeatPusherPowered</compClass>
+								<heatPerSecond>-200</heatPerSecond>
+								<heatPushMinTemperature>-50</heatPushMinTemperature>
+							</li>
+							<li Class="CompProperties_SnowExpand">
+								<addAmount>0.20</addAmount>
+								<expandInterval>1000</expandInterval>
+								<maxRadius>17</maxRadius>
+							</li>
+							<li Class="CompProperties_Explosive">
+								<explosiveRadius>8.0</explosiveRadius>
+								<explosiveDamageType>Bomb</explosiveDamageType>
+								<chanceNeverExplodeFromDamage>0.0</chanceNeverExplodeFromDamage>
+							</li>
+						</comps>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
@@ -154,6 +224,41 @@
 					</xpath>
 					<value>
 						<size>(2,2)</size>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="CryogenicPowerGeneratorIII"]/comps
+					</xpath>
+					<value>
+						<comps>
+							<li Class="CompProperties_Power">
+								<compClass>CompPowerPlant</compClass>
+								<basePowerConsumption>-24000</basePowerConsumption>
+								<transmitsPower>true</transmitsPower>
+								<shortCircuitInRain>true</shortCircuitInRain>
+							</li>
+							<li Class="CompProperties_Glower">
+								<glowRadius>8</glowRadius>
+								<glowColor>(0,200,250,0)</glowColor>
+							</li>
+							<li Class="CompProperties_Breakdownable"/>
+							<li Class="CompProperties_HeatPusher">
+								<compClass>CompHeatPusherPowered</compClass>
+								<heatPerSecond>-300</heatPerSecond>
+								<heatPushMinTemperature>-500</heatPushMinTemperature>
+							</li>
+							<li Class="CompProperties_SnowExpand">
+								<addAmount>0.20</addAmount>
+								<expandInterval>1000</expandInterval>
+								<maxRadius>17</maxRadius>
+							</li>
+							<li Class="CompProperties_Explosive">
+								<explosiveRadius>10.0</explosiveRadius>
+								<explosiveDamageType>Bomb</explosiveDamageType>
+								<chanceNeverExplodeFromDamage>0.0</chanceNeverExplodeFromDamage>
+							</li>
+						</comps>
 					</value>
 				</li>
 			</operations>

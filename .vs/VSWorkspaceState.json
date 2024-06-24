@@ -3,9 +3,8 @@
     "",
     "\\About",
     "\\Patches",
-    "\\Patches\\Core",
-    "\\Patches\\Mlie.CargoPodTransport"
+    "\\Patches\\dd.unnaturalpotion"
   ],
-  "SelectedNode": "\\Patches\\Core\\transport_pod.xml",
+  "SelectedNode": "\\About\\About.xml",
   "PreviewInSolutionExplorer": false
 }
