@@ -11,8 +11,8 @@
 					<value>
 						<RecipeDef>
 							<defName>Make_Unnaturalpotion_Cheat</defName>
-							<label>부자연적인 포션 제작 x5</label>
-							<description>부자연적은 포션을 제작한다.</description>
+							<label>부자연적인 물약 제작 x5</label>
+							<description>부자연적인 물약을 제작한다.</description>
 							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 							<effectWorking>CutStone</effectWorking>
 							<soundWorking>Recipe_MakeStoneBlocks</soundWorking>

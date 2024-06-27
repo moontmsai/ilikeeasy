@@ -11,6 +11,8 @@ I like easy!
 This is strictly my personal preference.
 // This mod is in Korean.
 
+로딩 순서: 가급적이면 최하단 // Loading order: preferably positioned at the very bottom.
+
 '기타' 항목에 '치트 제작 장소'가 있다.
 - 치트 제작장소에서 불공정한 생산을 한다. (예: 소재없이 감자 제작(x100) 등등)
 - 테이블 없이 식사할 경우 무드 보너스 3을 얻는다.
@@ -18,7 +20,7 @@ This is strictly my personal preference.
 등등 잡다한 기능이 있다.
 
 [Patched Mods list]
-Core - 흡습펌프 가속, (소재없이)반물질탄 제작, 막사 디버프 감소, 터렛 총알 무한, 타일바닥 가치 1로 고정
+Core - 흡습펌프 가속, (소재없이)반물질탄 제작, 타일바닥 가치 1로 고정 | [막사 디버프 감소, 터렛 총알 무한-임시삭제]
 Ideology - Autobong 건설 소재 삭제, 연초 소모 없음, 즉시 건설, 사상제한 삭제.
 Biotech - 메크링크 제작, 초월입자 캡슐 제작
 Anomaly - (소재없이)생체강철, 조각, 뒤틀린고기, 포탑 팩, 죽은 목숨 팩, 교란 신호탄 팩, 헬캣 소총, 소각기, 생체변이 랜스 제작
@@ -54,5 +56,7 @@ NR_AutoMachineTool (Continued) - 연구 삭제, 즉시 건설, 건설 자재 없
 Cargo Pod Transport (Continued) - 연구 삭제, 즉시 건설, 건설 자재 없음, 건설 스킬제한 없음 등등
 RimBank (Continued) - 건설 재재 없음 등
 Unnatural potion - '치트 제작 장소'에서 무료, 즉시 생산
+Rimefeller - 연구 삭제, 건설 자재 없음 등등
+Dubs Bad Hygiene - 연구 삭제, 건설 자재 없음 or 강철1개 등등
 	</description>
 </ModMetaData>

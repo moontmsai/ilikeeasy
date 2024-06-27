@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Rimefeller</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs</xpath>
+					<value>
+						<ResearchProjectDef>
+							<defName>ArtificialFloors</defName>
+							<label>Rimefeller1</label>
+							<description>Rimefeller</description>
+							<techLevel>Neolithic</techLevel>
+							<researchViewX>3</researchViewX>
+							<researchViewY>3</researchViewY>
+						</ResearchProjectDef>
+
+						<ResearchProjectDef>
+							<defName>SynthreadProduction</defName>
+							<label>Rimefeller2</label>
+							<description>Rimefeller</description>
+							<techLevel>Neolithic</techLevel>
+							<researchViewX>3</researchViewX>
+							<researchViewY>2.4</researchViewY>
+						</ResearchProjectDef>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[tab="Rimefeller"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchTabDef[defName="Rimefeller"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>
+						Defs/RecipeDef[
+						defName="Make_Napalm" or
+						defName="Make_ComponentIndustrialPlastic" or
+						defName="Make_ComponentIndustrialPlasticX5" or
+						defName="Make_ComponentSpacerSynthylene" or
+						defName="Make_PlasteelComposite" or
+						defName="Make_SynthamideComposite"
+						]/researchPrerequisite
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>
+						Defs/ThingDef[researchPrerequisites/
+						li="Napalm" or
+						li="OilDrilling" or
+						li="DeepOilWells" or
+						li="ChemfuelRefining" or
+						li="CE_FsxProduction" or
+						li="SynthyleneProduction" or
+						li="SynthamideProduction" or
+						li="HyperweaveProduction" or
+						li="NeutroamineProduction" or
+						li="SynthamideCompositeProduction" or
+						li="ArtificialFloors"
+						]/constructionSkillPrerequisite
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>
+						Defs/ThingDef/researchPrerequisites[
+						li="Napalm" or
+						li="OilDrilling" or
+						li="DeepOilWells" or
+						li="ChemfuelRefining" or
+						li="CE_FsxProduction" or
+						li="SynthyleneProduction" or
+						li="SynthamideProduction" or
+						li="HyperweaveProduction" or
+						li="NeutroamineProduction" or
+						li="SynthamideCompositeProduction" or
+						li="ArtificialFloors"
+						]
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[defName="CE_FsxProduction"]/prerequisites</xpath>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

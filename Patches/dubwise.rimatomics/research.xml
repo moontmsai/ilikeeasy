@@ -59,34 +59,24 @@
                     <xpath>Defs/ThingDef[@ParentName="BasedRimatomicsMom"]/constructionSkillPrerequisite</xpath>
                 </li>
 
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[@Class="Rimatomics.RimatomicsThingDef"]/costList</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[@ParentName="BasedRimatomicsMom"]/costList</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[@ParentName="BasedPower"]/costList</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[@ParentName="RimatomicResourceBase"]/costList</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[@Name="BasedWarhead"]/costList</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[@ParentName="BasedWarhead"]/costList</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[@ParentName="UpgradePart"]/costList</xpath>
-                </li>
-
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="PotassiumIodide"]/costList</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>Defs/ThingDef[defName="DU_Blastdoor"]/costList</xpath>
-                </li>
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[
+						@Class="Rimatomics.RimatomicsThingDef" or
+						@ParentName="BasedRimatomicsMom" or
+						@ParentName="BasedPower" or
+						@ParentName="RimatomicResourceBase" or
+						@Name="BasedWarhead" or
+						@ParentName="UpgradePart" or
+						defName="PotassiumIodide" or
+						defName="DU_Blastdoor"
+						]/costList</xpath>
+					<value>
+						<costList>
+							<Steel>1</Steel>
+						</costList>
+					</value>
+				</li>
 
                 <li Class="PatchOperationReplace">
                     <xpath>Defs/RecipeDef[@Name="MakeFuelRodsBase"]/workAmount</xpath>
@@ -153,6 +143,10 @@
                         <storedEnergyMax>60000</storedEnergyMax>
                     </value>
                 </li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="PRF_MiniHelperAtomic"]/researchPrerequisites</xpath>
+				</li>
             </operations>
         </match>
     </Operation>

@@ -3,8 +3,12 @@
     "",
     "\\About",
     "\\Patches",
-    "\\Patches\\dd.unnaturalpotion"
+    "\\Patches\\Core",
+    "\\Patches\\dubwise.rimatomics",
+    "\\Patches\\Dubwise.Rimefeller",
+    "\\Patches\\Mlie.QuestionableEthicsEnhanced",
+    "\\Patches\\spdskatr.projectrimfactory"
   ],
-  "SelectedNode": "\\About\\About.xml",
+  "SelectedNode": "\\Patches\\dubwise.rimatomics\\research.xml",
   "PreviewInSolutionExplorer": false
 }

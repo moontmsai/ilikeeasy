@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dubs Bad Hygiene</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchProjectDef[tab="DubsBadHygiene"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ResearchTabDef[defName="DubsBadHygiene"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>
+						Defs/ThingDef[
+						defName="BionicBladder" or
+						defName="HygieneEnhancer"
+						]/recipeMaker/researchPrerequisite</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>
+						Defs/TerrainDef[
+						defName="DBHMosaicTile" or
+						@Name="DBHMosaicBase" or
+						@ParentName="DubsDirtyPipeBase" or
+						@ParentName="BasedHygieneMom" or
+						@Name="DubsDirtyPipeBase" or
+						@ParentName="DubsDirtyTerletBase" or
+						@Name="DubsDirtyBathtubBase" or
+						@Name="DubsDirtyShowerBase" or
+						@ParentName="DubsDirtyShowerBase" or
+						@Name="DubsHotTubBase" or
+						defName="DBHSaunaHeaterLog" or
+						defName="DBHSaunaHeaterElec" or
+						defName="DBHSaunaSeating" or
+						@ParentName="BasedWaterWell" or
+						@ParentName="BasedWaterTower" or
+						@ParentName="BasedWaterPump" or
+						defName="Thermostat" or
+						defName="LogBoiler" or
+						defName="GasBoiler" or
+						defName="ElectricBoiler" or
+						defName="HotWaterTank" or
+						@Name="BaseRadiator" or
+						@ParentName="BaseRadiator" or
+						@Name="BasedCeilingFan" or
+						defName="AirConOutdoorUnit" or
+						@Name="BaseAircon"
+						]/researchPrerequisites
+					</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>
+						Defs/ThingDef[
+						defName="BionicBladder" or
+						defName="HygieneEnhancer" or
+						@ParentName="BasedHygieneMom" or
+						@ParentName="DubsDirtyPipeBase" or
+						@ParentName="DubsDirtyShowerBase" or
+						@Name="DubsHotTubBase" or
+						defName="DBHSaunaHeaterLog" or
+						defName="DBHSaunaHeaterElec" or
+						defName="DBHSaunaSeating" or
+						@ParentName="BasedWaterWell" or
+						@ParentName="BasedWaterTower" or
+						@ParentName="BasedWaterPump" or
+						defName="Thermostat" or
+						defName="LogBoiler" or
+						defName="GasBoiler" or
+						defName="ElectricBoiler" or
+						defName="HotWaterTank" or
+						@ParentName="BaseRadiator" or
+						@Name="BasedCeilingFan" or
+						defName="AirConOutdoorUnit" or
+						@ParentName="BaseAircon" or
+						@ParentName="DubsDirtyBasinBase" or
+						@ParentName="DubsDirtyTerletBase" or
+						@ParentName="DubsDirtyBathtubBase" or
+						@ParentName="AdvTerletBase" or
+						defName="WashingMachine" or
+						defName="SolarHeater" or
+						defName="GeothermHeater"
+						]/costList</xpath>
+				</li>
+				<!--<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>
+						Defs/ThingDef[
+						@ParentName="DubsDirtyPipeBase" or
+						@ParentName="DubsDirtyShowerBase" or
+						@Name="DubsHotTubBase" or
+						@ParentName="BasedHygieneMom" or
+						defName="DBHSaunaHeaterLog" or
+						defName="DBHSaunaHeaterElec" or
+						defName="DBHSaunaSeating" or
+						@ParentName="BasedWaterWell" or
+						@ParentName="BasedWaterTower" or
+						@ParentName="BasedWaterPump" or
+						defName="Thermostat" or
+						defName="LogBoiler" or
+						defName="GasBoiler" or
+						defName="ElectricBoiler" or
+						defName="HotWaterTank" or
+						@ParentName="BaseRadiator" or
+						@Name="BasedCeilingFan" or
+						defName="AirConOutdoorUnit" or
+						@ParentName="BaseAircon" or
+						@ParentName="DubsDirtyBasinBase" or
+						@ParentName="DubsDirtyTerletBase" or
+						@ParentName="DubsDirtyBathtubBase" or
+						@ParentName="AdvTerletBase" or
+						defName="WashingMachine" or
+						defName="SolarHeater" or
+						defName="GeothermHeater" or
+						defName="PitLatrine"
+						]/stuffCategories
+					</xpath>
+				</li>-->
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>
+						Defs/ThingDef[
+						@ParentName="DubsDirtyPipeBase" or
+						@ParentName="DubsDirtyShowerBase" or
+						@Name="DubsHotTubBase" or
+						@ParentName="BasedHygieneMom" or
+						defName="DBHSaunaHeaterLog" or
+						defName="DBHSaunaHeaterElec" or
+						defName="DBHSaunaSeating" or
+						@ParentName="BasedWaterWell" or
+						@ParentName="BasedWaterTower" or
+						@ParentName="BasedWaterPump" or
+						defName="Thermostat" or
+						defName="LogBoiler" or
+						defName="GasBoiler" or
+						defName="ElectricBoiler" or
+						defName="HotWaterTank" or
+						@ParentName="BaseRadiator" or
+						@Name="BasedCeilingFan" or
+						defName="AirConOutdoorUnit" or
+						@ParentName="BaseAircon" or
+						@ParentName="DubsDirtyBasinBase" or
+						@ParentName="DubsDirtyTerletBase" or
+						@ParentName="DubsDirtyBathtubBase" or
+						@ParentName="AdvTerletBase" or
+						defName="WashingMachine" or
+						defName="SolarHeater" or
+						defName="GeothermHeater" or
+						defName="PitLatrine"
+						]/costStuffCount
+					</xpath>
+					<value>
+						<costStuffCount>1</costStuffCount>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>
+						Defs/ThingDef[
+						@ParentName="DubsDirtyPipeBase" or
+						@ParentName="DubsDirtyShowerBase" or
+						@Name="DubsHotTubBase" or
+						@ParentName="BasedHygieneMom" or
+						defName="DBHSaunaHeaterLog" or
+						defName="DBHSaunaHeaterElec" or
+						defName="DBHSaunaSeating" or
+						@ParentName="BasedWaterWell" or
+						@ParentName="BasedWaterTower" or
+						@ParentName="BasedWaterPump" or
+						defName="Thermostat" or
+						defName="LogBoiler" or
+						defName="GasBoiler" or
+						defName="ElectricBoiler" or
+						defName="HotWaterTank" or
+						@ParentName="BaseRadiator" or
+						@Name="BasedCeilingFan" or
+						defName="AirConOutdoorUnit" or
+						@ParentName="BaseAircon"
+						]/constructionSkillPrerequisite
+					</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>
+						Defs/ThingDef[
+						defName="BionicBladder" or
+						defName="HygieneEnhancer"
+						]
+					</xpath>
+					<value>
+						<costList>
+							<Steel>1</Steel>
+						</costList>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
