@@ -6,9 +6,10 @@
     "\\Patches\\Core",
     "\\Patches\\dubwise.rimatomics",
     "\\Patches\\Dubwise.Rimefeller",
+    "\\Patches\\gt.sam.furnace",
     "\\Patches\\Mlie.QuestionableEthicsEnhanced",
     "\\Patches\\spdskatr.projectrimfactory"
   ],
-  "SelectedNode": "\\Patches\\dubwise.rimatomics\\research.xml",
+  "SelectedNode": "\\Patches\\Core\\fasterpump.xml",
   "PreviewInSolutionExplorer": false
 }

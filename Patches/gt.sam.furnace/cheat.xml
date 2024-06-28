@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Furnace</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="Furnace"]/costStuffCount</xpath>
+                </li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Furnace"]/stuffCategories</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="Furnace"]/costList</xpath>
+				</li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ThermalVent"]/costStuffCount</xpath>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/ThingDef[defName="ThermalVent"]/stuffCategories</xpath>
+                </li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="ThermalVent"]/costList</xpath>
+				</li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dubs Rimatomics</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Project RimFactory Revived</li>
+			</mods>
+			<match Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="PRF_MiniHelperAtomic"]/researchPrerequisites</xpath>
+			</match>
+		</match>
+	</Operation>
+</Patch>

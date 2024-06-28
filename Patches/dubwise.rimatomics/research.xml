@@ -39,27 +39,32 @@
 						<researchViewY>0.6</researchViewY>
 					</value>
 				</li>
-				
-                <li Class="PatchOperationRemove">
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
                     <xpath>Defs/Def[price]/price</xpath>
                 </li>
                 <li Class="PatchOperationRemove">
+					<success>Always</success>
                     <xpath>Defs/Def[PointCost]/PointCost</xpath>
                 </li>
                 <li Class="PatchOperationRemove">
+					<success>Always</success>
                     <xpath>Defs/Def[WorkType]/WorkType</xpath>
                 </li>
                 <li Class="PatchOperationRemove">
+					<success>Always</success>
                     <xpath>Defs/Def[SkillLevel]/SkillLevel</xpath>
                 </li>
                 <li Class="PatchOperationRemove">
+					<success>Always</success>
                     <xpath>Defs/ThingDef[@Class="Rimatomics.RimatomicsThingDef"]/constructionSkillPrerequisite</xpath>
                 </li>
                 <li Class="PatchOperationRemove">
+					<success>Always</success>
                     <xpath>Defs/ThingDef[@ParentName="BasedRimatomicsMom"]/constructionSkillPrerequisite</xpath>
                 </li>
-
 				<li Class="PatchOperationReplace">
+					<success>Always</success>
 					<xpath>
 						Defs/ThingDef[
 						@Class="Rimatomics.RimatomicsThingDef" or
@@ -79,12 +84,14 @@
 				</li>
 
                 <li Class="PatchOperationReplace">
+					<success>Always</success>
                     <xpath>Defs/RecipeDef[@Name="MakeFuelRodsBase"]/workAmount</xpath>
                     <value>
                         <workAmount>1</workAmount>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
+					<success>Always</success>
                     <xpath>Defs/RecipeDef[@Name="MakeFuelRodsBase"]/skillRequirements</xpath>
                     <value>
                         <skillRequirements>
@@ -93,6 +100,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
+					<success>Always</success>
                     <xpath>Defs/RecipeDef[@ParentName="MakeFuelRodsBase"]/ingredients</xpath>
                     <value>
                         <ingredients>
@@ -108,6 +116,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
+					<success>Always</success>
                     <xpath>Defs/RecipeDef[@ParentName="MakeFuelRodsBase"]/fixedIngredientFilter</xpath>
                     <value>
                         <fixedIngredientFilter>
@@ -119,18 +128,21 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
+					<success>Always</success>
                     <xpath>Defs/ThingDef[defName="CoolingRadiator"]/CoolingCapacityWatts</xpath>
                     <value>
                         <CoolingCapacityWatts>1000000</CoolingCapacityWatts>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
+					<success>Always</success>
                     <xpath>Defs/ThingDef[defName="CoolingWater"]/CoolingCapacityWatts</xpath>
                     <value>
                         <CoolingCapacityWatts>1000000</CoolingCapacityWatts>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
+					<success>Always</success>
                     <xpath>Defs/ThingDef[defName="CoolingTower"]/CoolingCapacityWatts</xpath>
                     <value>
                         <CoolingCapacityWatts>2000000</CoolingCapacityWatts>
@@ -138,6 +150,7 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
+					<success>Always</success>
                     <xpath>Defs/ThingDef[defName="PPC"]/comps/li/storedEnergyMax</xpath>
                     <value>
                         <storedEnergyMax>60000</storedEnergyMax>
@@ -145,6 +158,7 @@
                 </li>
 
 				<li Class="PatchOperationRemove">
+					<success>Always</success>
 					<xpath>Defs/ThingDef[defName="PRF_MiniHelperAtomic"]/researchPrerequisites</xpath>
 				</li>
             </operations>
